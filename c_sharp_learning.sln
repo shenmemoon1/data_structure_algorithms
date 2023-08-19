@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayDeque", "ArrayDeque\Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "HashTable\HashTable.csproj", "{630DE5D1-39AE-47A5-8445-4F0DCA87782A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashMapChaining", "HashMapChaining\HashMapChaining.csproj", "{FC154944-B72E-4996-A872-A4DEB20F5739}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{630DE5D1-39AE-47A5-8445-4F0DCA87782A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{630DE5D1-39AE-47A5-8445-4F0DCA87782A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{630DE5D1-39AE-47A5-8445-4F0DCA87782A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC154944-B72E-4996-A872-A4DEB20F5739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC154944-B72E-4996-A872-A4DEB20F5739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC154944-B72E-4996-A872-A4DEB20F5739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC154944-B72E-4996-A872-A4DEB20F5739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
