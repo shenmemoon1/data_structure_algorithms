@@ -76,8 +76,8 @@ namespace HashMapChaining
                 }
 
                 int index = hashFunc(k);
-
-                foreach(Pair p in buckets[index])
+                // 遍历桶，若遇到指定 key ，则更新对应 val 并返回
+                foreach (Pair p in buckets[index])
                 {
                     if(p.key == k)
                     {
@@ -111,7 +111,7 @@ namespace HashMapChaining
             public void extend()
             {
                 //暂存hashtable
-                List<List<Pair>> tempHash = new List<List<Pair>>();
+                List<List<Pair>> tempHash = buckets;
                 //初始化新的哈希表
                 capacity *= extendRatio;
                 buckets = new List<List<Pair>>(capacity);

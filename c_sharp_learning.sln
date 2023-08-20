@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayQue", "ArrayQue\ArrayQ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayDeque", "ArrayDeque\ArrayDeque.csproj", "{486FE91C-7B47-4BC4-95EF-6A6FD6375848}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "HashTable\HashTable.csproj", "{630DE5D1-39AE-47A5-8445-4F0DCA87782A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTable", "HashTable\HashTable.csproj", "{630DE5D1-39AE-47A5-8445-4F0DCA87782A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashMapChaining", "HashMapChaining\HashMapChaining.csproj", "{FC154944-B72E-4996-A872-A4DEB20F5739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashMapChaining", "HashMapChaining\HashMapChaining.csproj", "{FC154944-B72E-4996-A872-A4DEB20F5739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableOpenAddr", "HashTableOpenAddr\HashTableOpenAddr.csproj", "{0422FF90-C304-4943-974A-2DF8EF0D1597}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{FC154944-B72E-4996-A872-A4DEB20F5739}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC154944-B72E-4996-A872-A4DEB20F5739}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC154944-B72E-4996-A872-A4DEB20F5739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0422FF90-C304-4943-974A-2DF8EF0D1597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0422FF90-C304-4943-974A-2DF8EF0D1597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0422FF90-C304-4943-974A-2DF8EF0D1597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0422FF90-C304-4943-974A-2DF8EF0D1597}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
