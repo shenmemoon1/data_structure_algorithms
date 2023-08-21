@@ -110,7 +110,7 @@ namespace BinaryTree
         }
 
 
-        static void Main()
+     /*   static void Main()
         {
             //使用数组实现树结构
             //节点映射公式： 节点 i => 左节点= 2i + 1 => 右节点 2i+2
@@ -124,6 +124,6 @@ namespace BinaryTree
                 Console.Write(item);
                 Console.Write("-");
             }
-        }
+        }*/
     }
 }
