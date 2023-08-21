@@ -8,6 +8,8 @@ namespace BinaryTree
     class Program
     {
         public static List<int> list2 = new List<int>();
+        public static List<int> list3 = new List<int>();
+        public static List<int> list4 = new List<int>();
         //层序遍历 level-order traversal
         public static List<int> levelOrder(TreeNode root)
         {
@@ -43,8 +45,25 @@ namespace BinaryTree
             preOrder(root.left);
             //looping right
             preOrder(root.right);
+        }
 
-           
+        //中序遍历
+
+        public static void inOrder(TreeNode? root)
+        {
+            if (root == null) return;
+            inOrder(root.left);
+            list3.Add(root.val);
+            inOrder(root.right);
+        }
+
+        //post-order
+        public static void postOrder(TreeNode? root)
+        {
+            if (root == null) return;
+            postOrder(root.left);
+            postOrder(root.right);
+            list4.Add(root.val);
         }
 
         static void Main(string[] args)
@@ -60,12 +79,30 @@ namespace BinaryTree
             treeNode2.left = treeNode4;
             treeNode2.right = treeNode5;
 
+            //print pre order
             preOrder(treeNode1);
             foreach (int val in list2)
             {
                 Console.Write($"{val}-");
             }
 
+            Console.WriteLine();
+
+            //print in-order
+            inOrder(treeNode1);
+            foreach (int val in list3)
+            {
+                Console.Write($"{val}-");
+            }
+
+            Console.WriteLine();
+
+            //print post-order
+            postOrder(treeNode1);
+            foreach (int val in list4)
+            {
+                Console.Write($"{val}-");
+            }
 
         }
     }
