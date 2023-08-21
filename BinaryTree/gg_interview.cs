@@ -53,7 +53,7 @@ class Program
         return validLocations.OrderBy(location => location.TotalDistance).FirstOrDefault();
     }
 
-    static void Main(string[] args)
+/*    static void Main(string[] args)
     {
         List<Block> blocks = new List<Block>
         {
@@ -65,5 +65,5 @@ class Program
 
         ApartmentLocation optimalLocation = FindOptimalLocation(blocks);
         Console.WriteLine($"Optimal Apartment Location: Block {optimalLocation.Index}, Total Distance: {optimalLocation.TotalDistance}");
-    }
+    }*/
 }

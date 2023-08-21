@@ -13,10 +13,4 @@ namespace BinaryTree
         public TreeNode? right; //右子节点
         public TreeNode(int value) => val = value;
     }
-
-
-    /*class NorBinaryTree
-    {
-        
-    }*/
 }

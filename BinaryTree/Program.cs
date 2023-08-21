@@ -66,7 +66,7 @@ namespace BinaryTree
             list4.Add(root.val);
         }
 
-        /*static void Main(string[] args)
+        static void Main(string[] args)
         {
             TreeNode treeNode1 = new TreeNode(1);
             TreeNode treeNode2 = new TreeNode(2);
@@ -98,12 +98,13 @@ namespace BinaryTree
             Console.WriteLine();
 
             //print post-order
-            postOrder(treeNode1);
-            foreach (int val in list4)
-            {
-                Console.Write($"{val}-");
-            }*/
+            /* postOrder(treeNode1);
+             foreach (int val in list4)
+             {
+                 Console.Write($"{val}-");
+             }
 
-        //}
+             }*/
+        }
+        }
     }
-}

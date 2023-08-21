@@ -8,7 +8,6 @@ namespace BinaryTree
 {
     class ArrayBinaryTree
     {
-
         private List<int?> tree;
         public ArrayBinaryTree(List<int?> arr)
         {
@@ -33,14 +32,12 @@ namespace BinaryTree
 
 
         //索引左节点
-
         public int left(int i)
         {
             return 2 * i + 1;
         }
         
         //索引右节点
-
         public int right(int i)
         {
             return 2 * i + 2;
@@ -110,7 +107,7 @@ namespace BinaryTree
         }
 
 
-     /*   static void Main()
+        /*static void Main()
         {
             //使用数组实现树结构
             //节点映射公式： 节点 i => 左节点= 2i + 1 => 右节点 2i+2
