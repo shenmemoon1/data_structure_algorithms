@@ -28,10 +28,32 @@ namespace BinaryTree
         }
 
         //插入节点
-        public void insert(TreeNode root, int num)
+        public static void insert(TreeNode root, int num)
         {
             TreeNode node = new TreeNode(num);
-
+            TreeNode cur = root;
+            TreeNode pre;
+            while (cur!=null)
+            {
+                if (cur.val > num)
+                {
+                    pre = cur;
+                    cur = cur.left;
+                    if (cur == null)
+                    {
+                        pre.left = node;
+                    }
+                }
+                else if (cur.val < num)
+                {
+                    pre = cur;
+                    cur = cur.right;
+                    if (cur == null)
+                    {
+                        pre.right = node;
+                    }
+                }
+            }
         }
 
         static void Main(string[] args)
@@ -59,6 +81,11 @@ namespace BinaryTree
 
             TreeNode fnode = findTree(treeNode8, 7);
             Console.WriteLine(fnode.val);
+
+            insert(treeNode8, 16);
+            insert(treeNode8, 11);
+
+            
         }
     }
 }
