@@ -27,9 +27,14 @@ namespace BinaryTree
             return cur;
         }
 
+
         //插入节点
         public static void insert(TreeNode root, int num)
         {
+            // 若树为空，直接提前返回
+            if (root == null)
+                return;
+
             TreeNode node = new TreeNode(num);
             TreeNode cur = root;
             TreeNode pre;
@@ -44,7 +49,7 @@ namespace BinaryTree
                         pre.left = node;
                     }
                 }
-                else if (cur.val < num)
+                else
                 {
                     pre = cur;
                     cur = cur.right;
@@ -54,6 +59,59 @@ namespace BinaryTree
                     }
                 }
             }
+        }
+
+        
+
+
+        //删除节点
+        public static void remove(TreeNode root, int num)
+        {
+            //节点为空 返回
+            if (root == null)
+            {
+                return;
+            }
+
+            //设置prev,cur节点
+            TreeNode cur = root, prev = null;
+            while (cur != null)
+            {
+                if (cur.val == num)
+                    break;
+                prev = cur;
+                if (cur.val > num)
+                    cur = cur.left;
+                else
+                    cur = cur.right;
+            }
+
+
+            //子节点 = 0 or 1
+            if (cur.left == null || cur.right == null)
+            {
+                TreeNode child = cur.left != null ? cur.left : cur.right;
+                if (cur != root)
+                    if (prev.left == cur)
+                        prev.left = child;
+                    else
+                        prev.right = child;
+                else
+                    root = child;
+            }
+
+            //子节点 = 2;
+            else
+            {
+                TreeNode? tep = cur.right;
+                while (tep.left != null)
+                {
+                    tep = tep.left;
+                }
+
+                remove(root, tep.val);
+                cur.val = tep.val;
+            }             
         }
 
         static void Main(string[] args)
@@ -82,8 +140,7 @@ namespace BinaryTree
             TreeNode fnode = findTree(treeNode8, 7);
             Console.WriteLine(fnode.val);
 
-            insert(treeNode8, 16);
-            insert(treeNode8, 11);
+            remove(treeNode8, 1);
 
             
         }
