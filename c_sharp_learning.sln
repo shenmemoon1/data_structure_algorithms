@@ -17,11 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTable", "HashTable\Hash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashMapChaining", "HashMapChaining\HashMapChaining.csproj", "{FC154944-B72E-4996-A872-A4DEB20F5739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableOpenAddr", "HashTableOpenAddr\HashTableOpenAddr.csproj", "{0422FF90-C304-4943-974A-2DF8EF0D1597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTableOpenAddr", "HashTableOpenAddr\HashTableOpenAddr.csproj", "{0422FF90-C304-4943-974A-2DF8EF0D1597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree", "BinaryTree\BinaryTree.csproj", "{11A1F248-FA65-47A4-AC1E-CFAF9F3E01CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTree", "BinaryTree\BinaryTree.csproj", "{11A1F248-FA65-47A4-AC1E-CFAF9F3E01CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{6AADE594-F452-4941-812F-7D8F151C5DEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{6AADE594-F452-4941-812F-7D8F151C5DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVLTree", "AVLTree\AVLTree.csproj", "{B0AFDA7B-E14C-426A-B4ED-09C9389036A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{6AADE594-F452-4941-812F-7D8F151C5DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AADE594-F452-4941-812F-7D8F151C5DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AADE594-F452-4941-812F-7D8F151C5DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0AFDA7B-E14C-426A-B4ED-09C9389036A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AFDA7B-E14C-426A-B4ED-09C9389036A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AFDA7B-E14C-426A-B4ED-09C9389036A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AFDA7B-E14C-426A-B4ED-09C9389036A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
