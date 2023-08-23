@@ -140,7 +140,7 @@ namespace BinaryTree
             TreeNode fnode = findTree(treeNode8, 7);
             Console.WriteLine(fnode.val);
 
-            remove(treeNode8, 1);
+            remove(treeNode8, 2);
 
             
         }
