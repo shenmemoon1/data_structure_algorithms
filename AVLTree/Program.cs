@@ -59,6 +59,44 @@ namespace AVLTree
             return child;
         }
 
+        //先左旋再右旋
+
+        static TreeNode? rotate(TreeNode? node)
+        {
+            //获取节点的平衡因子
+            int balanceFactorInt = balanceFactor(node);
+            //左偏树
+            if (balanceFactorInt > 1)
+            {
+                if (balanceFactor(node.left) >= 0)
+                    //右旋
+                    return rightRotate(node);
+                else
+                {
+                    node.left = leftRotate(node?.left);
+                    return rightRotate(node);
+                }
+            }
+            // 右偏树
+            if (balanceFactorInt < -1)
+            {
+                if (balanceFactor(node.right) <= 0)
+                {
+                    // 左旋
+                    return leftRotate(node);
+                }
+                else
+                {
+                    // 先右旋后左旋
+                    node.right = rightRotate(node?.right);
+                    return leftRotate(node);
+                }
+            }
+            // 平衡树，无须旋转，直接返回
+            return node;
+
+        }
+
 
         static void Main(string[] args)
         {
@@ -77,12 +115,10 @@ namespace AVLTree
             t3.right = t6;
             t6.right = t7;
 
-            leftRotate(t3);
-
-            //解释
+            //解释旋转
             /*
              * 在这里设置了child 和 grandchil来保存子孙节点
-             首先 5-》 6-》8 右侧大于左部
+             首先 5-》 6-》8 右侧大于左部 
             进行左旋转
                     6
                     |
@@ -95,6 +131,8 @@ namespace AVLTree
                     |
             null <- -> null
              */
+            leftRotate(t3);
+
 
         }
     }
