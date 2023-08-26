@@ -97,24 +97,84 @@ namespace AVLTree
 
         }
 
+        //插入节点
+        static void insert(TreeNode root, int val)
+        {
+            root = insertHleper(root, val);
+        }
+
+        static TreeNode? insertHleper(TreeNode? node, int val)
+        {
+            if (node == null) return new TreeNode(val);
+            //找到插入的位置 并插入节点
+            if (val < node.val)
+            {
+                node.left = insertHleper(node.left, val);
+
+            }
+            else if (val > node.val)
+            {
+                node.right = insertHleper(node.right, val);
+            }
+            else
+                return node; //重复节点不插入 直接返回
+
+            updateHeight(node); //更新节点高度
+            //执行平很操作
+            node = rotate(node);
+            //返回子树根节点
+            return node;
+        }
+
+        //删除节点
+        static void remove(TreeNode? root, int val)
+        {
+            root = removeHelper(root, val);
+        }
+
+        static TreeNode? removeHelper(TreeNode? node, int val)
+        {
+            if (node.val == val) return null;
+            if (node.val < val)
+                node.right = removeHelper(node.right, val);
+            else if (node.val > val)
+                node.left = removeHelper(node.left, val);
+            else
+            {
+                if (node.left != null || node.right != null)
+                {
+                    TreeNode? child = node.left != null ? node.left : node.right;
+                    // 子节点数量 = 0 ，直接删除 node 并返回
+                    if (child == null)
+                        return null;
+                    // 子节点数量 = 1 ，直接删除 node
+                    else
+                        node = child;
+                }
+                else
+                {
+                    // 子节点数量 = 2 ，则将中序遍历的下个节点删除，并用该节点替换当前节点
+                    TreeNode? temp = node.right;
+                    while (temp.left != null)
+                    {
+                        temp = temp.left;
+                    }
+                    node.right = removeHelper(node.right, temp.val);
+                    node.val = temp.val;
+                }
+            }
+            updateHeight(node);  // 更新节点高度
+            /* 2. 执行旋转操作，使该子树重新恢复平衡 */
+            node = rotate(node);
+            // 返回子树的根节点
+            return node;
+
+        }
+    
 
         static void Main(string[] args)
         {
-            TreeNode t1 = new TreeNode(4);
-            TreeNode t2 = new TreeNode(2);
-            TreeNode t3 = new TreeNode(5);
-            TreeNode t4 = new TreeNode(1);
-            TreeNode t5 = new TreeNode(3);
-            TreeNode t6 = new TreeNode(6);
-            TreeNode t7 = new TreeNode(8);
-
-            t1.left = t2;
-            t1.right = t3;
-            t2.left = t4;
-            t2.right = t5;
-            t3.right = t6;
-            t6.right = t7;
-
+            //===============================================tesing 1==========================================================//
             //解释旋转
             /*
              * 在这里设置了child 和 grandchil来保存子孙节点
@@ -131,7 +191,18 @@ namespace AVLTree
                     |
             null <- -> null
              */
-            leftRotate(t3);
+            //leftRotate(t3);
+
+            //===============================================tesing 2==========================================================//
+            /*
+             *                 4
+             *                 |
+             *             3<==|==>5
+             *             |
+             *         1<==|==>null
+             *  null<==|==>2
+             */
+
 
 
         }
