@@ -8,7 +8,7 @@ namespace AVLTree
         public static int height(TreeNode? node)
         {
             //空节点高度为 -1 叶子节点为0
-            return node == null ? -1 : 0;
+            return node == null ? -1 : node.height;
         }
 
         //更新节点高度
@@ -203,6 +203,11 @@ namespace AVLTree
              *  null<==|==>2
              */
 
+            TreeNode t1 = new TreeNode(4);
+            insert(t1,3);
+            insert(t1, 5);
+            insert(t1,1);
+            insert(t1, 2);
 
 
         }
