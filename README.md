@@ -19,6 +19,13 @@ base on c#
 
 ![image](https://github.com/shenmemoon1/data_structure_algorithms/assets/79250603/c94b9c16-5206-4d68-9f3b-6cc53f91084e)
 
+建堆操作
+
+![image](https://github.com/shenmemoon1/data_structure_algorithms/assets/79250603/c5a6df84-c068-470a-8ffd-db4d0d21760a)
+
+
+![image](https://github.com/shenmemoon1/data_structure_algorithms/assets/79250603/bbf177b7-221f-45d9-932a-de4ab082119d)
+
 
 图来源于krahets大神
 
