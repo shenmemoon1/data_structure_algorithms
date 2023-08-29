@@ -24,8 +24,6 @@ base on c#
 1.通过直接输入一个乱序数组
 2。使用从上到下的方式来对比左右子节点，直到符合堆化（可查看heap->maxheap 文件）
 
-![image](https://github.com/shenmemoon1/data_structure_algorithms/assets/79250603/c5a6df84-c068-470a-8ffd-db4d0d21760a)
-
 
 ![image](https://github.com/shenmemoon1/data_structure_algorithms/assets/79250603/bbf177b7-221f-45d9-932a-de4ab082119d)
 
