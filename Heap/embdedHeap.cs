@@ -113,7 +113,7 @@ namespace Heap
                     max = r;
                 }
                 //如果超过最大和越过节点 则结束堆
-                if (max == i) break;
+                if (i == max) break;
                 //交换节点
                 swap(max, i);
                 //循环向下堆化
