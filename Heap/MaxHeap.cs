@@ -1,15 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConcurrentPriorityQueue;
 
 namespace Heap
 {
-    class embdedHeap
+    public class MaxHeap
     {
-        static List<int> maxHeap = new List<int>();
+        public List<int> maxHeap;
+        /* 构造函数，根据输入列表建堆 */
+        public MaxHeap(IEnumerable<int> nums)
+        {
+            // 将列表元素原封不动添加进堆
+            maxHeap = new List<int>(nums);
+            // 堆化除叶节点以外的其他所有节点
+            var size = parent(this.size() - 1);
+            for (int i = size; i >= 0; i--)
+            {
+                shifDown(i);
+            }
+        }
+
         /* 初始化堆 */
         // 初始化小顶堆
         //堆满足完全二叉树条件 =》 使用数组实现
@@ -22,36 +32,36 @@ namespace Heap
         （向下取整）。当索引越界时，表示空节点或节点不存在
          */
         //左子节点
-        static int left(int i)
+        public int left(int i)
         {
             return 2 * i + 1;
         }
         //右子节点
-        static int right(int i)
+        public  int right(int i)
         {
             return 2 * i + 2;
         }
         //父节点
-        static int parent(int i)
+        public  int parent(int i)
         {
             return (i - 1) / 2; // 向下整除
         }
 
         //peek
-        static int peek()
+        public int peek()
         {
             return maxHeap[0];
         }
 
         //push val
-        static void push(int val)
+        public void push(int val)
         {
             maxHeap.Add(val);
             //底部到顶堆化
-            shiftUp(size() - 1);
+            shifUp(size() - 1);
         }
 
-        static void shiftUp(int val)
+        public void shifUp(int val)
         {
             while (true)
             {
@@ -69,19 +79,19 @@ namespace Heap
             
         }
         //替换元素
-        static void swap(int a,int b)
+        public void swap(int a,int b)
         {
             int temp = maxHeap[a];
             maxHeap[a] = maxHeap[b];
             maxHeap[b]= temp;
         }
 
-        static int size()
+        public int size()
         {
             return maxHeap.Count;
         }
 
-        static int pop()
+        public int pop()
         {
             //判断空处理
             if (isEmpty())
@@ -94,12 +104,12 @@ namespace Heap
             int val = maxHeap.Last();
             maxHeap.Remove(val);
             //顶到底部堆化
-            shiftDown(0);
+            shifDown(0);
             return val;
         }
 
-        static void shiftDown(int i)
-        {
+         public void shifDown(int i)
+         {
             while (true)
             {
                 //判断节点 i l r最大的节点 max
@@ -117,13 +127,18 @@ namespace Heap
                 //交换节点
                 swap(max, i);
                 //循环向下堆化
-                i = max;
+                max = i;
             }
         }
 
-        static bool isEmpty()
+        public bool isEmpty()
         {
             return maxHeap.Count == 0;
+        }
+
+        public List<int> print()
+        {
+            return maxHeap;
         }
 
     }
