@@ -32,7 +32,6 @@ namespace Heap
                         // 3
                     }
 
-                    continue;
                 }
 
                 if (list.Count <= 3)
