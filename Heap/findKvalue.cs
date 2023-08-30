@@ -27,11 +27,7 @@ namespace Heap
                     if (Arr[max] < Arr[i])
                     {
                         max = i;
-                       
-
-                        // 3
                     }
-
                 }
 
                 if (list.Count <= 3)
