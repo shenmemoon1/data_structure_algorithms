@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTree", "BinaryS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVLTree", "AVLTree\AVLTree.csproj", "{B0AFDA7B-E14C-426A-B4ED-09C9389036A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "Heap\Heap.csproj", "{537B9660-CC56-4A86-B249-7056D97A2260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heap", "Heap\Heap.csproj", "{537B9660-CC56-4A86-B249-7056D97A2260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphy", "Graphy\Graphy.csproj", "{B6C2432E-F46E-4354-874D-96EBD4FB0E6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{537B9660-CC56-4A86-B249-7056D97A2260}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{537B9660-CC56-4A86-B249-7056D97A2260}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{537B9660-CC56-4A86-B249-7056D97A2260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C2432E-F46E-4354-874D-96EBD4FB0E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C2432E-F46E-4354-874D-96EBD4FB0E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C2432E-F46E-4354-874D-96EBD4FB0E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C2432E-F46E-4354-874D-96EBD4FB0E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
