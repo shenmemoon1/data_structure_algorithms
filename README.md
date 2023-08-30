@@ -1,5 +1,5 @@
 # data_structure_algorithms
-base on c#
+基于c#实现数据结构和算法
 
 树结构的讲解
 
@@ -18,6 +18,14 @@ base on c#
 旋转的四种形态
 
 ![image](https://github.com/shenmemoon1/data_structure_algorithms/assets/79250603/c94b9c16-5206-4d68-9f3b-6cc53f91084e)
+
+建堆操作
+
+1.通过直接输入一个乱序数组
+2。使用从上到下的方式来对比左右子节点，直到符合堆化（可查看heap->maxheap 文件）
+
+
+![image](https://github.com/shenmemoon1/data_structure_algorithms/assets/79250603/bbf177b7-221f-45d9-932a-de4ab082119d)
 
 
 图来源于krahets大神
