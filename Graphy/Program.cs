@@ -6,7 +6,7 @@ namespace Graphy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Graphy!");
+            Console.WriteLine("hello grapy");
         }
     }
 }
