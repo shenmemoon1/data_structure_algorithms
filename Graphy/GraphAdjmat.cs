@@ -9,13 +9,14 @@ namespace Graphy
     //基于邻接矩阵实现无向图类
     class GraphAdjmat
     {
-        List<int> vertices; //顶点列表 元素代表 顶点值 索引代表顶点索引
-        List<List<int>> adjMat; //临接矩阵， 行列索引对于顶点索引
-
+        public List<int> vertices; //顶点列表 元素代表 顶点值 索引代表顶点索引
+        public List<List<int>> adjMat; //临接矩阵， 行列索引对于顶点索引
+         
         public GraphAdjmat(int[] vertices, int[][] edges)
         {
             this.vertices = new List<int>();
             this.adjMat = new List<List<int>>();
+
             //添加顶点
             foreach (int val in vertices)
             {
