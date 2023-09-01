@@ -15,9 +15,9 @@ namespace Graphy
                 new int[] { 2, 3 }
             };
 
-            GraphAdjmat graph = new GraphAdjmat(vertices, edges);
+            Graph graph = new Graph(vertices, edges);
 
-            foreach (List<int> item in graph.adjMat)
+            foreach (List<int> item in graph.adjaMatrix)
             {
                 foreach (int i in item)
                 {
