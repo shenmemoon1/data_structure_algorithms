@@ -8,7 +8,7 @@ namespace Graphy
 {
     class Vertex
     {
-        public int value;
+        public int value { get; set; }
         //public Vertex next;
         public Vertex(int x) => value = x;
     }

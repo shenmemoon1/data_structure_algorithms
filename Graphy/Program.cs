@@ -38,18 +38,42 @@ namespace Graphy
 
 
         //DFS
+        static List<Vertex> graphDFS(GraphHash graph, Vertex startVertex)
+        {
+            //顶点序列
+            List<Vertex> res = new List<Vertex>();
+            //哈希表记录访问过的点
+            HashSet<Vertex> visited = new HashSet<Vertex>();
+            dfs(graph, visited, res, startVertex);
+            return res;
+        }
 
+        private static void dfs(GraphHash graph, HashSet<Vertex> visited, List<Vertex> res, Vertex startVertex)
+        {
+            res.Add(startVertex);
+            visited.Add(startVertex);
+            //遍历这个顶点的所有临边顶点
+            foreach (Vertex adjVet in graph.adjList[startVertex])
+            {
+                if (visited.Contains(adjVet))
+                {
+                    continue;
+                }
+                //遍历返回邻接顶点
+                dfs(graph, visited, res, adjVet);
+            }
+        }
 
         static void Main(string[] args)
         {
             //adjacency matrix
-            int[] vertices = { 0, 1, 2, 3 ,5,6};
+           /* int[] vertices = { 0, 1, 2, 3 ,5,6};
             int[][] edges = {
                 new int[] { 0, 1 },
                 new int[] { 0, 3 },
                 new int[] { 1, 2 },
                 new int[] { 2, 5 },
-                new int[] { 4, 5 },
+                new int[] { 5, 4 },
                 new int[] { 5, 6 },
             };
 
@@ -63,25 +87,42 @@ namespace Graphy
                 }
                 Console.WriteLine();
             }
-
+*/
             //List of adjacency
             // 创建一些顶点和边的数组
+            /*   Vertex[] vertx = new Vertex[]
+               {
+                   new Vertex(1),
+                   new Vertex(2), 
+                   new Vertex(3),
+                   new Vertex(4)
+               };
+
+               Vertex[][] edge = new Vertex[][]
+               {
+                   new Vertex[] { vertx[0], vertx[1]},
+                   new Vertex[] { vertx[1], vertx[2]},
+                   new Vertex[] { vertx[1], vertx[3] },
+                   new Vertex[] { vertx[3], vertx[4] },
+                   //new Vertex[] { vertx[3], vertx[0] }
+               };
+   */
             Vertex[] vertx = new Vertex[]
             {
+                new Vertex(0),
                 new Vertex(1),
-                new Vertex(2), 
-                new Vertex(3),
-                new Vertex(4)
+                new Vertex(2),
+                new Vertex(3)
             };
 
             Vertex[][] edge = new Vertex[][]
             {
-                new Vertex[] { vertx[0], vertx[1]},
-                new Vertex[] { vertx[0], vertx[3]},
+                new Vertex[] { vertx[0], vertx[1] },
+                new Vertex[] { vertx[0], vertx[3] },
                 new Vertex[] { vertx[1], vertx[2] },
                 new Vertex[] { vertx[2], vertx[3] },
-                //new Vertex[] { vertx[3], vertx[0] }
             };
+
 
             GraphHash graphHash = new GraphHash(edge);
 
@@ -110,6 +151,9 @@ namespace Graphy
             {
                 Console.WriteLine(vertex.value);
             }
+
+            List<Vertex> test = graphDFS(graphHash, startVertex);
+
 
         }
     }
