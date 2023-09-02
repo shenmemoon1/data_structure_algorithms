@@ -36,6 +36,17 @@ namespace Graphy
 
         }
 
+        private void removeEdge(Vertex v1, Vertex v2)
+        {
+            if (v1 == v2 || !adjList.ContainsKey(v1) || !adjList.ContainsKey(v1))
+            {
+                throw new InvalidOperationException();
+            }
+
+            adjList[v1].Remove(v1);
+            adjList[v2].Remove(v2);
+        }
+
         //添加操作
         private void addVertx(Vertex edge)
         {
