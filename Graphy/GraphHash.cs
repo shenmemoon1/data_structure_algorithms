@@ -75,5 +75,6 @@ namespace Graphy
                 v.Remove(vertex);
             }
         }
+
     }
 }
