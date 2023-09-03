@@ -173,6 +173,7 @@ namespace HashTableOpenAddr
             hashTableOpen.put(123, "David");
             hashTableOpen.put(163, "John");
             hashTableOpen.put(143, "Kevin");
+            hashTableOpen.put(153, "Lilly");
 
             hashTableOpen.print();
         }
