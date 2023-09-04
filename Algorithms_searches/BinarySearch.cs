@@ -36,19 +36,27 @@ namespace Algorithms_searches
         //左闭右开区间
         public int FindIndex2(int[] nums, int target)
         {
-            // 初始化左闭右开 [0, n) ，即 i, j 分别指向数组首元素、尾元素+1
-            int i = 0, j = nums.Length;
-            while (i < j)
+            /* 二分查找插入点（无重复元素） */
+            int i = 0, j = nums.Length - 1; // 初始化双闭区间 [0, n-1]
+            while (i <= j)
             {
-                int m = i + (j - i) / 2;
-                if (nums[m] < target)      // 此情况说明 target 在区间 [m+1, j] 中
-                    i = m + 1;
-                else if (nums[m] > target) // 此情况说明 target 在区间 [i, m-1] 中
-                    j = m;
-                else                       // 找到目标元素，返回其索引
-                    return m;
+                int m = i + (j - i) / 2; // 计算中点索引 m
+                if (nums[m] < target)
+                {
+                    i = m + 1; // target 在区间 [m+1, j] 中
+                }
+                else if (nums[m] > target)
+                {
+                    j = m - 1; // target 在区间 [i, m-1] 中
+                }
+                else
+                {
+                    return m; // 找到 target ，返回插入点 m
+                }
             }
-            return -1;
+            // 未找到 target ，返回插入点 i
+            return i;
+
         }
     }
 }
