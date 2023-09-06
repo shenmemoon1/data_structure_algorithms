@@ -19,6 +19,8 @@ namespace Algorithms_searches
             BinaryInserction binary1 = new BinaryInserction();
             int res3 = binary1.binaryInsert(nums, 5);
             Console.WriteLine(res3);
+            int res4 = binary1.binaryInsert2(nums, 8);
+            Console.WriteLine(res4);
         }
     }
 }
