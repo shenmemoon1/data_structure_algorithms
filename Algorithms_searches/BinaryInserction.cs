@@ -20,7 +20,7 @@ namespace Algorithms_searches
         {
             int i = 0, j = nums.Length;
             while (i<j)
-            {
+            { 
                 int m = i + (j - i) / 2;
                 if (nums[m] < target)      // 此情况说明 target 在区间 [m+1, j] 中
                     i = m + 1;
@@ -28,6 +28,22 @@ namespace Algorithms_searches
                     j = m;
                 else                       // 找到目标元素，返回其索引
                     return m;
+            }
+            return i;
+        }
+
+        public int binaryInsert2(int[] nums, int target)
+        {
+            int i = 0, j = nums.Length;
+            int m = i - (j - i) / 2;
+            while (i<j)
+            {
+                if (nums[m] < target)
+                    i = m + 1;
+                else if (nums[m] > target)
+                    j = m;
+                else
+                    j = m;
             }
             return i;
         }
