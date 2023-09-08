@@ -21,6 +21,10 @@ namespace Algorithms_searches
             Console.WriteLine(res3);
             int res4 = binary1.binaryInsert2(nums, 8);
             Console.WriteLine(res4);
+
+            int res5 = binary1.binarySearchLeftEdge(nums,5);
+
+            Console.WriteLine(res5);
         }
     }
 }

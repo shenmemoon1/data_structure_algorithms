@@ -32,7 +32,7 @@ namespace Algorithms_searches
             return i;
         }
 
-        public int binaryInsert2(int[] nums, int target)
+        public int  binaryInsert2(int[] nums, int target)
         {
             int i = 0, j = nums.Length - 1; // 初始化双闭区间 [0, n-1]
             while (i <= j)
@@ -54,5 +54,25 @@ namespace Algorithms_searches
             // 返回插入点 i
             return i;
         }
+        /*
+         * Question
+         * 给定一个长度为n的有序数组 nums ，数组可能包含重复元素。请返回数组中最左一个元素 target 的索引。若数组中不包含该元素，则返回 -1
+         */
+        /* 二分查找最左一个 target */
+        public int binarySearchLeftEdge(int[] nums, int target)
+        {
+            // 等价于查找 target 的插入点
+            int i = binaryInsert2(nums, target);
+            // 未找到 target ，返回 -1
+            if (i == nums.Length || nums[i]!=target)
+            {
+                return -1;
+            }
+            //找到target 返回索引 i
+            return i;
+        }
+
     }
+
+
 }
