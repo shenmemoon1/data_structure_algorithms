@@ -28,6 +28,14 @@ namespace Algorithms_searches
             int res6 = binary1.binarySearchRightEdge(nums, 5);
 
             Console.WriteLine(res5);
+
+
+            Console.WriteLine("------------ hashtable optimization search ------------");
+            HashOptz hashOptz = new();
+            int[] nums2 = { 2, 7, 11, 15 };
+            hashOptz.twoSumHashTable(nums2, 13);
+            
+            
         }
     }
 }
