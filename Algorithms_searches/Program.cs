@@ -25,6 +25,9 @@ namespace Algorithms_searches
             int res5 = binary1.binarySearchLeftEdge(nums,5);
 
             Console.WriteLine(res5);
+            int res6 = binary1.binarySearchRightEdge(nums, 5);
+
+            Console.WriteLine(res5);
         }
     }
 }

@@ -72,6 +72,20 @@ namespace Algorithms_searches
             return i;
         }
 
+        /* 二分查找最右一个 target */
+        public int binarySearchRightEdge(int[] nums, int target)
+        {
+            int i = binaryInsert2(nums, target + 1); 
+            // j 指向最右一个 target ，i 指向首个大于 target 的元素
+            int j = i - 1;
+            // 未找到 target ，返回 -1
+            if (j == -1 || nums[j] != target)
+            {
+                return -1;
+            }
+            // 找到 target ，返回索引 j
+            return j;
+        }
     }
 
 
