@@ -22,14 +22,25 @@ namespace Sort_Algorithms
                 //设数组第一个值为bas 已排序值
                 //可以使用很多方法实现 这个只是一个例子
                 //为了判断i之前的值
-                for (int j = 0; j < i; j++)
+                /*for (int j = 0; j < i; j++)
                 {
                     //i和前面所有值对比
                     if (nums[i] < nums[j])
                     {
                         (nums[i], nums[j]) = (nums[j], nums[i]);
                     }
+                }*/
+
+                //优化版
+                //减少频繁交换
+                int current = nums[i], j = i -1;
+                while (j>=0 && nums[i]> current)
+                {
+                    nums[j + 1] = nums[j];
+                    j--;
                 }
+
+                nums[j + 1] = current;
                 
             }
         }
