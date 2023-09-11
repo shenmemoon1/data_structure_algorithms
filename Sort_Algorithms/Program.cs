@@ -6,7 +6,7 @@ namespace Sort_Algorithms
     {
         static void Main(string[] args)
         {
-            int[] nums = { 4, 1, 3, 1, 5, 2 };
+            int[] nums = { 4,3,2,5,1};
             //SELECT SORT
             Selection_Sort selection_ = new();
             //selection_.selectionSort(nums);
@@ -17,7 +17,14 @@ namespace Sort_Algorithms
 
             //Insertion Sort
             Insertion_Sort insertion_ = new();
-            insertion_.insertionSort(nums);
+            //insertion_.insertionSort(nums);
+
+            Quick_Sort quick_ = new();
+            quick_.quick_sort(nums);
+            foreach (int item in nums)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
