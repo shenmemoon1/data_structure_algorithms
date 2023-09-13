@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphy", "Graphy\Graphy.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms_searches", "Algorithms_searches\Algorithms_searches.csproj", "{54759C25-603D-4623-83A1-3E330AF5F40B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort_Algorithms", "Sort_Algorithms\Sort_Algorithms.csproj", "{9683EF53-AD39-4402-99CC-F347083B74B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sort_Algorithms", "Sort_Algorithms\Sort_Algorithms.csproj", "{9683EF53-AD39-4402-99CC-F347083B74B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepintoCsharp", "DeepintoCsharp\DeepintoCsharp.csproj", "{AD6B63E2-19D3-4031-8509-46D493452EA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{9683EF53-AD39-4402-99CC-F347083B74B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9683EF53-AD39-4402-99CC-F347083B74B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9683EF53-AD39-4402-99CC-F347083B74B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6B63E2-19D3-4031-8509-46D493452EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6B63E2-19D3-4031-8509-46D493452EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6B63E2-19D3-4031-8509-46D493452EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6B63E2-19D3-4031-8509-46D493452EA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
