@@ -8,6 +8,7 @@ namespace DeepintoCsharp
 {
     class Human
     {
+        private int age;
         //字段
         public static int counter=0;
         public readonly string color;
@@ -44,7 +45,7 @@ namespace DeepintoCsharp
             set
             {
                 if (value.Length < 2)
-                {
+                { 
                     this.name = value;
                 }
                 else
@@ -54,7 +55,8 @@ namespace DeepintoCsharp
             }
         }
 
-
+        //  写法四
+        public int Age { get => age; set => age = value; }
 
         //静态方法 直接可以调用
         public static void SayHi(string name)
@@ -69,5 +71,6 @@ namespace DeepintoCsharp
             //只能一次 readonly属性
             color = "blue";
         }
+        
     }
 }
