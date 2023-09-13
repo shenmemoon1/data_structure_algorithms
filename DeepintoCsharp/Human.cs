@@ -9,9 +9,52 @@ namespace DeepintoCsharp
     class Human
     {
         //字段
-        public string name { get; set ;}
         public static int counter=0;
         public readonly string color;
+        //属性写法一
+        //public string Name { get; set ;}
+        //也可以写成
+
+        //属性封装  
+        //写法二
+        /*public string GetName()
+        {
+            return this.name;
+        }
+
+        public void SetName(string n)
+        {
+            if (n.Length < 2)
+            {
+                throw new Exception("Not Accept");
+            }
+
+            this.name = n;
+        }*/
+
+        //写法三
+        private string name;
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+
+            set
+            {
+                if (value.Length < 2)
+                {
+                    this.name = value;
+                }
+                else
+                {
+                    throw new Exception("Not Accept");
+                }
+            }
+        }
+
+
 
         //静态方法 直接可以调用
         public static void SayHi(string name)
@@ -21,7 +64,7 @@ namespace DeepintoCsharp
         //构造器
         public Human(string n)
         {
-            name = n;
+            Name = n;
             counter++;
             //只能一次 readonly属性
             color = "blue";
