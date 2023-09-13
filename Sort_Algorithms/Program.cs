@@ -20,7 +20,11 @@ namespace Sort_Algorithms
             //insertion_.insertionSort(nums);
 
             Quick_Sort quick_ = new();
-            quick_.quick_sort(nums);
+            //quick_.quick_sort(nums);
+            quick quick = new();
+            //quick.quicks(nums);
+            Merge_Sort merge_ = new();
+            merge_.MergeSort(nums);
             foreach (int item in nums)
             {
                 Console.WriteLine(item);
