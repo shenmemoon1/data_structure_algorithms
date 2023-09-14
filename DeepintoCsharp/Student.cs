@@ -11,6 +11,11 @@ namespace DeepintoCsharp
      */
     class Student
     {
+        public string Name { get; set; }
+        public Student()
+        {
+            this.Name = "tom";
+        }
         //使用于集合
         private Dictionary<string, int> score = new Dictionary<string, int>();
 

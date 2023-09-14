@@ -25,6 +25,19 @@ namespace DeepintoCsharp
             var mathScroe = s1["Math"];
             Console.WriteLine(mathScroe);
             Console.WriteLine(mathScroe == null);
+
+
+            Console.WriteLine("--------------------------值类型---------------------------");
+            int x = 100;
+            Para para = new(s1);
+            //实参传递给形参（副本）
+            para.AddOne(x);
+            //x 并没有修改
+            Console.WriteLine(x);
+            //同一个内存地址
+            Console.WriteLine(s1.Name);
+            Console.WriteLine(s1.GetHashCode());
+
         }
     }
 }
