@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms_searches", "Algo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sort_Algorithms", "Sort_Algorithms\Sort_Algorithms.csproj", "{9683EF53-AD39-4402-99CC-F347083B74B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepintoCsharp", "DeepintoCsharp\DeepintoCsharp.csproj", "{AD6B63E2-19D3-4031-8509-46D493452EA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepintoCsharp", "DeepintoCsharp\DeepintoCsharp.csproj", "{AD6B63E2-19D3-4031-8509-46D493452EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveIntoDelegate", "DiveIntoDelegate\DiveIntoDelegate.csproj", "{F07F370F-ED07-46F8-89BF-942A458F8079}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{AD6B63E2-19D3-4031-8509-46D493452EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD6B63E2-19D3-4031-8509-46D493452EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD6B63E2-19D3-4031-8509-46D493452EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07F370F-ED07-46F8-89BF-942A458F8079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07F370F-ED07-46F8-89BF-942A458F8079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07F370F-ED07-46F8-89BF-942A458F8079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07F370F-ED07-46F8-89BF-942A458F8079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
