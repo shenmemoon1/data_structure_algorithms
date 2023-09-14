@@ -8,7 +8,7 @@ namespace DiveIntoDelegate
     delegate int CalDelegate(int x, int y);
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Action action = new Action(TestDel.report);
             //直接调用
@@ -74,7 +74,36 @@ namespace DiveIntoDelegate
 
             action1.Invoke();*/
 
+            Console.WriteLine("------------------TASK lock的作用----------------------");
+
+            var account = new TaskLock(1000);
+            var tasks = new Task[100];
+            for (int i = 0; i < tasks.Length; i++)
+            {
+                tasks[i] = Task.Run(() => Update(account));
+            }
+            await Task.WhenAll(tasks);
+            Console.WriteLine($"Account's balance is {account.GetBalance()}");
+            // Output:
+
+
         }
+        static void Update(TaskLock account)
+        {
+            decimal[] amounts = { 0, 2, -3, 6, -2, -1, 8, -5, 11, -6 };
+            foreach (var amount in amounts)
+            {
+                if (amount >= 0)
+                {
+                    account.Credit(amount);
+                }
+                else
+                {
+                    account.Debit(Math.Abs(amount));
+                }
+            }
+        }
+
 
         class Logger
         {
