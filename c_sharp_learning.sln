@@ -35,7 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sort_Algorithms", "Sort_Alg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepintoCsharp", "DeepintoCsharp\DeepintoCsharp.csproj", "{AD6B63E2-19D3-4031-8509-46D493452EA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveIntoDelegate", "DiveIntoDelegate\DiveIntoDelegate.csproj", "{F07F370F-ED07-46F8-89BF-942A458F8079}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveIntoDelegate", "DiveIntoDelegate\DiveIntoDelegate.csproj", "{F07F370F-ED07-46F8-89BF-942A458F8079}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveIntoEvent", "DiveIntoEvent\DiveIntoEvent.csproj", "{52B87FBE-3C70-4F4D-8385-A243C9CC8F7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveInThead", "DiveInThead\DiveInThead.csproj", "{9B20EBC9-2226-405D-BDEC-25985C1C5732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,14 @@ Global
 		{F07F370F-ED07-46F8-89BF-942A458F8079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F07F370F-ED07-46F8-89BF-942A458F8079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F07F370F-ED07-46F8-89BF-942A458F8079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B87FBE-3C70-4F4D-8385-A243C9CC8F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B87FBE-3C70-4F4D-8385-A243C9CC8F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B87FBE-3C70-4F4D-8385-A243C9CC8F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B87FBE-3C70-4F4D-8385-A243C9CC8F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B20EBC9-2226-405D-BDEC-25985C1C5732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B20EBC9-2226-405D-BDEC-25985C1C5732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B20EBC9-2226-405D-BDEC-25985C1C5732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B20EBC9-2226-405D-BDEC-25985C1C5732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

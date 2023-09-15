@@ -6,7 +6,7 @@ namespace Sort_Algorithms
     {
         static void Main(string[] args)
         {
-            int[] nums = { 4,3,2,5,1};
+            int[] nums = { 4,7,2,5,1};
             //SELECT SORT
             Selection_Sort selection_ = new();
             //selection_.selectionSort(nums);
