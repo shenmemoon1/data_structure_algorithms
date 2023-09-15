@@ -47,6 +47,16 @@ namespace DiveIntoEvent
             customer.Order += waiter.Action;
             customer.Action();
             customer.PayBill();
+            //为什么使用事件 就是为了限制dele的外部使用
+            //下面就是一个非常不好的例子 不加以限制 那么外部可以直接访问
+            /*Customer bad = new();
+            OrderEvenArgs e = new OrderEvenArgs();
+            e.DishName = "fdf";
+            e.Size = "large";
+            bad.Order += waiter.Action;
+            bad.Order.Invoke(customer, e);
+
+            customer.PayBill();*/
 
         }
     }
@@ -82,6 +92,8 @@ namespace DiveIntoEvent
 
         //简化上面代码
         public event OrderEventHandler Order;
+        //外部直接访问 这个是个坏例子
+        //public  OrderEventHandler Order;
 
 
         public double Bill { get; set; }
