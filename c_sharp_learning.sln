@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveIntoEvent", "DiveIntoEv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveInThead", "DiveInThead\DiveInThead.csproj", "{9B20EBC9-2226-405D-BDEC-25985C1C5732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveEventw", "DiveEventw\DiveEventw.csproj", "{7DF9F026-BEFA-49C5-AA9F-AD8707212F88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{9B20EBC9-2226-405D-BDEC-25985C1C5732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B20EBC9-2226-405D-BDEC-25985C1C5732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B20EBC9-2226-405D-BDEC-25985C1C5732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF9F026-BEFA-49C5-AA9F-AD8707212F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF9F026-BEFA-49C5-AA9F-AD8707212F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF9F026-BEFA-49C5-AA9F-AD8707212F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF9F026-BEFA-49C5-AA9F-AD8707212F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
