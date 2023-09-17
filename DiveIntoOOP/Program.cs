@@ -55,7 +55,19 @@ namespace DiveIntoOOP
             /*Manager m = new();
             m.Run();*/
 
-            Console.WriteLine("======================接口和抽象=====================");
+            // 接口和抽象很重要的点
+            /*
+             * 抽象类除了private 不可以 其他都可以
+             * 因为他是基类 用了private就没有意义
+             * 接口默认就是public 所以必须public
+             * 接口就是契约 contract
+             */
+
+            Console.WriteLine("======================抽象和开闭原则=====================");
+            Parent p = new Son();
+            p.Run();
+
+            Console.WriteLine("======================接口=====================");
 
         }
     }

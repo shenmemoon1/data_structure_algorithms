@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DiveIntoOOP
 {
+    
     class IntefaceExample
     {
     }
+
+    
 }
