@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace DiveIntoOOP
 {
@@ -16,11 +17,11 @@ namespace DiveIntoOOP
             Console.WriteLine(Student.Amount);
             Console.ReadLine();*/
 
-            Type t = typeof(SubClass);
+           /* Type t = typeof(SubClass);
             Type tb = t.BaseType;
             Console.WriteLine(tb.FullName);
 
-            Console.WriteLine("======================继承=====================");
+            Console.WriteLine("======================继承=====================");*/
             //是一个  is a
             //从语义上来说 派生类也是基类的一个实例
             //可以是使用父类来创建一个子类实例
@@ -35,7 +36,7 @@ namespace DiveIntoOOP
             subClass.Show();*/
 
 
-            Console.WriteLine("======================重写和多态=====================");
+         /*   Console.WriteLine("======================重写和多态=====================");
             Human human = new();
             Teacher teacher = new();
             human.Run();
@@ -45,12 +46,12 @@ namespace DiveIntoOOP
             t1.Run();
 
             Human t2 = new Manager();
-            t2.Run();
+            t2.Run();*/
             //最好使用teacher 来什么变量类型 继承谁调用谁 
             //因为保证了run是最新的
             //引用谁调谁 引用了manager
-            Teacher t3 = new Manager();
-            t2.Run();
+           /* Teacher t3 = new Manager();
+            t2.Run();*/
             //不使用override的情况 base被隐藏
             /*Manager m = new();
             m.Run();*/
@@ -63,12 +64,27 @@ namespace DiveIntoOOP
              * 接口就是契约 contract
              */
 
-            Console.WriteLine("======================抽象和开闭原则=====================");
+            /*Console.WriteLine("======================抽象和开闭原则=====================");
             Parent p = new Son();
             p.Run();
 
             Console.WriteLine("======================接口=====================");
+            int[] nums = { 1, 3, 5, 7, 8 };
+            ArrayList a = new ArrayList{ 1, 43, 79 };
 
+            IntefaceExample example = new IntefaceExample();
+            Console.WriteLine(example.Sum(nums));
+            Console.WriteLine(example.Sum(a));*/
+
+            //例子2
+            Engine engine = new Engine();
+            Car car = new Car(engine);
+            car.Run(3);
+            Console.WriteLine("----------------speed---------------------------");
+            Console.WriteLine(car.Speed);
+            //例子3
+            UserPhone user = new UserPhone(new NokiaPhone());
+            user.UsePhone();
         }
     }
 
