@@ -33,6 +33,30 @@ namespace DiveIntoOOP
             /*SubClass subClass = new("433");
             Console.WriteLine(subClass.ID);
             subClass.Show();*/
+
+
+            Console.WriteLine("======================重写和多态=====================");
+            Human human = new();
+            Teacher teacher = new();
+            human.Run();
+            teacher.Run();
+            Console.WriteLine("======================多态=====================");
+            Human t1 = new Teacher();
+            t1.Run();
+
+            Human t2 = new Manager();
+            t2.Run();
+            //最好使用teacher 来什么变量类型 继承谁调用谁 
+            //因为保证了run是最新的
+            //引用谁调谁 引用了manager
+            Teacher t3 = new Manager();
+            t2.Run();
+            //不使用override的情况 base被隐藏
+            /*Manager m = new();
+            m.Run();*/
+
+            Console.WriteLine("======================接口和抽象=====================");
+
         }
     }
 
