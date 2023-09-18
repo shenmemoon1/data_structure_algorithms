@@ -17,11 +17,11 @@ namespace DiveIntoOOP
             Console.WriteLine(Student.Amount);
             Console.ReadLine();*/
 
-           /* Type t = typeof(SubClass);
-            Type tb = t.BaseType;
-            Console.WriteLine(tb.FullName);
+            /* Type t = typeof(SubClass);
+             Type tb = t.BaseType;
+             Console.WriteLine(tb.FullName);
 
-            Console.WriteLine("======================继承=====================");*/
+             Console.WriteLine("======================继承=====================");*/
             //是一个  is a
             //从语义上来说 派生类也是基类的一个实例
             //可以是使用父类来创建一个子类实例
@@ -36,22 +36,22 @@ namespace DiveIntoOOP
             subClass.Show();*/
 
 
-         /*   Console.WriteLine("======================重写和多态=====================");
-            Human human = new();
-            Teacher teacher = new();
-            human.Run();
-            teacher.Run();
-            Console.WriteLine("======================多态=====================");
-            Human t1 = new Teacher();
-            t1.Run();
+            /*   Console.WriteLine("======================重写和多态=====================");
+               Human human = new();
+               Teacher teacher = new();
+               human.Run();
+               teacher.Run();
+               Console.WriteLine("======================多态=====================");
+               Human t1 = new Teacher();
+               t1.Run();
 
-            Human t2 = new Manager();
-            t2.Run();*/
+               Human t2 = new Manager();
+               t2.Run();*/
             //最好使用teacher 来什么变量类型 继承谁调用谁 
             //因为保证了run是最新的
             //引用谁调谁 引用了manager
-           /* Teacher t3 = new Manager();
-            t2.Run();*/
+            /* Teacher t3 = new Manager();
+             t2.Run();*/
             //不使用override的情况 base被隐藏
             /*Manager m = new();
             m.Run();*/
@@ -77,14 +77,38 @@ namespace DiveIntoOOP
             Console.WriteLine(example.Sum(a));*/
 
             //例子2
-            Engine engine = new Engine();
+            /*Engine engine = new Engine();
             Car car = new Car(engine);
             car.Run(3);
             Console.WriteLine("----------------speed---------------------------");
             Console.WriteLine(car.Speed);
             //例子3
             UserPhone user = new UserPhone(new NokiaPhone());
-            user.UsePhone();
+            user.UsePhone();*/
+
+
+            //例子3
+            //三种设计模式
+            //第一种
+            /*
+             * 这种模式写了很多的重复代码
+             * 不同的车写不同的类
+             * 并且高耦合度
+             * cardriver基于car
+             */
+            CarDriver carDriver = new CarDriver(new Car2());
+            ReceDriver receDriver = new ReceDriver(new ReceCar());
+
+            carDriver.Drven();
+            receDriver.Driven();
+
+            /*
+             * 第二种写法
+             * 单结构模式
+             * 汽车和赛车都是车
+             * 很多方法一样 然后类进程车这个接口类
+             */
+            
         }
     }
 
