@@ -128,6 +128,10 @@ namespace DiveIntoOOP
             Console.WriteLine("-----------------设计模式三-------------------");
             new Driver2().Driven(new ReceCr());
             new Driver3().Driven(new Car3());
+
+            Console.WriteLine("-----------------接口自底向上和单元测试-------------------");
+            DeskFan deskFan = new DeskFan(new PowerSupply());
+            deskFan.Work();
         }
     }
 

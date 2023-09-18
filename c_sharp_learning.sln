@@ -41,9 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveIntoEvent", "DiveIntoEv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveInThead", "DiveInThead\DiveInThead.csproj", "{9B20EBC9-2226-405D-BDEC-25985C1C5732}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveEventw", "DiveEventw\DiveEventw.csproj", "{7DF9F026-BEFA-49C5-AA9F-AD8707212F88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveEventw", "DiveEventw\DiveEventw.csproj", "{7DF9F026-BEFA-49C5-AA9F-AD8707212F88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveIntoOOP", "DiveIntoOOP\DiveIntoOOP.csproj", "{B198C068-62BF-4CF6-88D1-4C7D16875556}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveIntoOOP", "DiveIntoOOP\DiveIntoOOP.csproj", "{B198C068-62BF-4CF6-88D1-4C7D16875556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceExample3.Tests", "InterfaceExample3.Tests\InterfaceExample3.Tests.csproj", "{6A9E7DC2-F880-4CA1-B28C-266964F33B3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{B198C068-62BF-4CF6-88D1-4C7D16875556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B198C068-62BF-4CF6-88D1-4C7D16875556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B198C068-62BF-4CF6-88D1-4C7D16875556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9E7DC2-F880-4CA1-B28C-266964F33B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9E7DC2-F880-4CA1-B28C-266964F33B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9E7DC2-F880-4CA1-B28C-266964F33B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9E7DC2-F880-4CA1-B28C-266964F33B3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
