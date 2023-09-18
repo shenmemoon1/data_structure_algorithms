@@ -96,19 +96,31 @@ namespace DiveIntoOOP
              * 并且高耦合度
              * cardriver基于car
              */
+            Console.WriteLine("-----------------设计模式一-------------------");
             CarDriver carDriver = new CarDriver(new Car2());
             ReceDriver receDriver = new ReceDriver(new ReceCar());
 
             carDriver.Drven();
             receDriver.Driven();
 
+
+            /*  *第二种写法
+              * 单接口模式
+              * 汽车和赛车都是车
+              * 很多方法一样 然后类进程车这个接口类*/
+
+            Console.WriteLine("-----------------设计模式二-------------------");
+            Driver driver = new Driver(new ReceCr());
+            driver.Driven();
+
             /*
-             * 第二种写法
-             * 单结构模式
-             * 汽车和赛车都是车
-             * 很多方法一样 然后类进程车这个接口类
-             */
-            
+            * 第三种写法
+            * 多接口模式
+            * 不同的司机可以开不同的车
+            */
+            Console.WriteLine("-----------------设计模式三-------------------");
+            new Driver2().Driven(new ReceCr());
+            new Driver3().Driven(new Car3());
         }
     }
 

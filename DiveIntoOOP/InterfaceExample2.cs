@@ -55,4 +55,66 @@ namespace DiveIntoOOP
             Console.WriteLine("ReceCar is runing");
         }
     }
+    //第二种
+    //单接口模式
+    public interface IVehicle
+    {
+        void Run();
+    }
+
+    public class Car3 : IVehicle
+    {
+        public void Run()
+        {
+            Console.WriteLine("car is running");
+        }
+    }
+
+    public class ReceCr : IVehicle
+    {
+        public void Run()
+        {
+            Console.WriteLine("rece car is running");
+        }
+    }
+
+    public class Driver
+    {
+        private IVehicle vehicle;
+        public Driver(IVehicle vehicle)
+        {
+            this.vehicle = vehicle;
+        }
+
+        public void Driven()
+        {
+            this.vehicle.Run();
+        }
+    }
+
+    //模式3
+    public interface IDriver
+    {
+        void Driven(IVehicle vehicle);
+    }
+
+    public class Driver2 : IDriver
+    {
+        public void Driven(IVehicle vehicle)
+        {
+            Console.WriteLine("driver 2 drive");
+            vehicle.Run();
+        }
+    }
+
+    public class Driver3 : IDriver
+    {
+        public void Driven(IVehicle vehicle)
+        {
+            Console.WriteLine("driver e drive");
+            vehicle.Run();
+        }
+    }
+
+
 }
