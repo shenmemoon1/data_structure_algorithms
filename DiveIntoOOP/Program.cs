@@ -132,6 +132,48 @@ namespace DiveIntoOOP
             Console.WriteLine("-----------------接口自底向上和单元测试-------------------");
             DeskFan deskFan = new DeskFan(new PowerSupply());
             deskFan.Work();
+
+            Console.WriteLine("-----------------接口隔离-------------------");
+            //下面这个实例尽管可以使用run方法但是如果我想要catch的是Ifly类型 就得跑去hunter里面修改类型
+            //这是没有必要的 并且我只是需要run方法 但是再ifly里还要其他方法 这个接口变成胖接口 因为比不需其他方法
+            //提供者不多给 获得者不多要 这个违反了单一职责原则
+            new Hunter(new Cat()).Catch();
+            //output hunter catch
+            //cat is running
+
+            //现在我想要使用IFLY接口的类型 现在只能去修改接口 把接口隔离
+            /*
+             * 现在把接口隔离 使得IFLY继承其他两个接口 这样子 因为IFLY 继承者IANIMAL 和 IfooD
+             * 所有就可以传递不同的类型了
+             * 
+             */
+            new Hunter(new BigBird()).Catch();
+            Console.WriteLine("-----------------接口隔离例子2-------------------");
+            int[] num = new int[] { 1, 2, 3, 5, 7, 8 };
+            var roc = new ReadOnlyCollection(num);
+            foreach (var item in roc)
+            {
+                Console.WriteLine(item);
+            }
+
+            //现在调用sum方法 发现新的roc无法使用 因为接口太胖
+            //服务提供者不多给 服务需求者不多要
+            //ReadOnlyCollection.Sum(roc);
+            ReadOnlyCollection.Sum(roc);
+
+
+            Console.WriteLine("-----------------接口隔离例子3 c#接口显示-------------------");
+            WarmKiller warmKiller = new();
+            warmKiller.Love();
+            //warmKiller.kill();
+            //但是我想实现显示接口 只要特殊情况才能调用kill这个方法
+            Console.WriteLine("-----------------接口隔离例子3 显示-------------------");
+            /*IKiller killer = new WarmKiller();
+            killer.kill();*/
+            var wk = new WarmKiller();
+            IKiller ik = wk;
+            ik.kill();
+            wk.Love();
         }
     }
 
