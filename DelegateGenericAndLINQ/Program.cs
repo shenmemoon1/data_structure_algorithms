@@ -19,6 +19,17 @@ namespace DelegateGenericAndLINQ
             MyDele2<double> myDele21 = Mul;
             double res2=  myDele21.Invoke(2.2, 4.5);
             Console.WriteLine(res2);
+
+            Console.WriteLine("========================委托Lambda========================");
+            //匿名函数简化
+            //inline method
+            MyDele myDele1 = () => Console.WriteLine("hwllo wolrd");
+            myDele1();
+
+            Func<int, int, int> func = (int a, int b) => a + b;
+            int res3 = func(2,4);
+            Console.WriteLine(res);
+
         }
 
         static int Add(int a, int b)
