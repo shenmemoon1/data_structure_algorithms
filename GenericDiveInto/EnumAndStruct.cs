@@ -55,13 +55,21 @@ namespace GenericDiveInto
     //结构体可以使用接口
     struct Studnet : IActivity
     {
-        //不能显式的构造器
+        //不能显式无参数的构造器
         /*public Studnet()
         {
 
         }*/
         public int Id { get; set; }
         public string Name { get; set; }
+
+        //但是可以显示的有参数构造器
+        public Studnet(string name, int id)
+        {
+            this.Id = id;
+            this.Name = name;
+        }
+
 
         public void Run()
         {

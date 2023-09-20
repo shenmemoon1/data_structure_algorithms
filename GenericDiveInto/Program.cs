@@ -58,6 +58,10 @@ namespace GenericDiveInto
             Console.WriteLine("=--------------------------------struct----------------------------");
             Studnet student1 = new Studnet() { Id=3,Name="bill"};
             //把stud net这个类copy 然后他copy的放进堆里面
+
+            //======================================总结 结构体==============================================
+            //除了继承接口 其他都不行
+            //不能使用无参构造 但是可以使用有参构造器
             //装箱
             object obj = student1;
             //拆箱
