@@ -33,6 +33,21 @@ namespace DelegateGenericAndLINQ
             //把委托作为函数指针使用
             DoSomeCal<int>((int a, int b) =>  a +b,100,200);
 
+            Console.WriteLine("========================委托Lambda========================");
+            //linq 
+            //必学SQL
+            //无法创建data类
+            //接下来伪代码
+            var dbContext = new AdventureWorks2013Entities();
+            //var allPeople = dbContext.People.ToList();
+            //linq语法
+            //就是类似SQL
+            var allPeopleFirstName = dbContext.People.Select(p=>p.FirstName).ToList();
+
+            /*foreach (var item in allPeople)
+            {
+                Console.WriteLine(item.FirstName);
+            }*/
 
         }
 
