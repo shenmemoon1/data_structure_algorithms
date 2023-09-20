@@ -42,6 +42,29 @@ namespace GenericDiveInto
 
             Func<int, int, int> func = Add;
             Console.WriteLine(func.Invoke(100, 300)) ;
+
+            //Console.WriteLine("============lambda==================");
+            Console.WriteLine("=--------------------------------枚举---------------------------------");
+
+            Person person = new() { Id = 2, Name = "dfd", Level=Level.Boss};
+            //person.Skill = Skill.Program | Skill.Cook;
+            // 将技能属性设置为 Program（编程） | Cook（烹饪） | Swim（游泳）
+            person.Skill = Skill.Program | Skill.Cook;
+            //会其中的两个
+            Console.WriteLine(person.Skill);
+            // 检查人是否具备 Cook（烹饪）技能
+            // 这里使用位运算 & 操作来检查，如果结果大于 0，则表示具备该技能
+            Console.WriteLine((person.Skill & Skill.Cook) > 0);
+            Console.WriteLine("=--------------------------------struct----------------------------");
+            Studnet student1 = new Studnet() { Id=3,Name="bill"};
+            //把stud net这个类copy 然后他copy的放进堆里面
+            //装箱
+            object obj = student1;
+            //拆箱
+            Studnet studnet = (Studnet)obj;
+            Console.WriteLine(studnet.Name);
+            studnet.Run();
+
         }
 
         //泛型委托
@@ -57,12 +80,16 @@ namespace GenericDiveInto
         }
 
         //写一个泛型方法
-       /* public static T Sum<T>(T a, T b)
-        {
-            dynamic x = a;
-            dynamic y = b;
-            dynamic z = x + y;
-            return z;
-        }*/
+        /* public static T Sum<T>(T a, T b)
+         {
+             dynamic x = a;
+             dynamic y = b;
+             dynamic z = x + y;
+             return z;
+         }*/
+
+        //lambda
+        //public int Mul(int a, int b) => a + b;
+
     }
 }
