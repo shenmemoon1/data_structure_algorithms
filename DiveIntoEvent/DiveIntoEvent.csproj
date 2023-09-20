@@ -14,4 +14,8 @@
     </COMReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DiveIntoOOP\DiveIntoOOP.csproj" />
+  </ItemGroup>
+
 </Project>

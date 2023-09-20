@@ -97,16 +97,16 @@ namespace DiveIntoOOP
         }
     }
 
-    interface IFood
+    public interface IFood
     {
         void Eat();
     }
 
-    interface IFly : IAnimal, IFood
+    public interface IFly : IAnimal, IFood
     {
     }
 
-    class BigBird : IFly
+    public class BigBird : IFly
     {
         public void Eat()
         {
@@ -119,7 +119,7 @@ namespace DiveIntoOOP
         }
     }
 
-    class MidBird : IFly
+    public class MidBird : IFly
     {
         public void Eat()
         {
@@ -131,7 +131,7 @@ namespace DiveIntoOOP
             Console.WriteLine("meidum bird flying");
         }
     }
-    class SmallBird : IFly
+    public class SmallBird : IFly
     {
         public void Eat()
         {
