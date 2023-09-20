@@ -27,9 +27,19 @@ namespace DelegateGenericAndLINQ
             myDele1();
 
             Func<int, int, int> func = (int a, int b) => a + b;
-            int res3 = func(2,4);
-            Console.WriteLine(res);
+            /*int res3 = func(2,4);
+            Console.WriteLine(res);*/
 
+            //把委托作为函数指针使用
+            DoSomeCal<int>((int a, int b) =>  a +b,100,200);
+
+
+        }
+
+        static void DoSomeCal<T>(Func<T,T,T> func,T x, T y)
+        {
+            T res4 = func(x,y);
+            Console.WriteLine(res4);
         }
 
         static int Add(int a, int b)
