@@ -76,7 +76,9 @@ namespace DiveIntoOOP
 
     public interface IAnimal
     {
-        void Run();
+        //void Run();
+        //这个是gei sdk例子使用
+        void Voice(int times);
     }
 
     //Interface segregation principle

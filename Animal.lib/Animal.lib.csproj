@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DI.SDK\DI.SDK.csproj" />
+    <ProjectReference Include="..\DiveIntoOOP\DiveIntoOOP.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DI.SDK">
+      <HintPath>..\DI.SDK\bin\Debug\net5.0\DI.SDK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
