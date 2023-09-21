@@ -49,9 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceExample3.Tests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveIntoReflection", "DiveIntoReflection\DiveIntoReflection.csproj", "{732A5813-2AEC-4ABD-B11F-75B504590376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDiveInto", "GenericDiveInto\GenericDiveInto.csproj", "{F56306A2-C6CA-420A-91DF-3B56F454029C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericDiveInto", "GenericDiveInto\GenericDiveInto.csproj", "{F56306A2-C6CA-420A-91DF-3B56F454029C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateGenericAndLINQ", "DelegateGenericAndLINQ\DelegateGenericAndLINQ.csproj", "{A0D1C597-952B-4145-86DB-F9790A4D4729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateGenericAndLINQ", "DelegateGenericAndLINQ\DelegateGenericAndLINQ.csproj", "{A0D1C597-952B-4145-86DB-F9790A4D4729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency_Injection", "Dependency_Injection\Dependency_Injection.csproj", "{1543FAD8-4EF4-4496-B1FD-7A9E49160494}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{A0D1C597-952B-4145-86DB-F9790A4D4729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0D1C597-952B-4145-86DB-F9790A4D4729}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0D1C597-952B-4145-86DB-F9790A4D4729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1543FAD8-4EF4-4496-B1FD-7A9E49160494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1543FAD8-4EF4-4496-B1FD-7A9E49160494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1543FAD8-4EF4-4496-B1FD-7A9E49160494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1543FAD8-4EF4-4496-B1FD-7A9E49160494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
