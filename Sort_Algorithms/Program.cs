@@ -25,11 +25,15 @@ namespace Sort_Algorithms
             quick quick = new();
             //quick.quicks(nums);
             Merge_Sort merge_ = new();
-            merge_.MergeSort(nums);
+            //merge_.MergeSort(nums);
+
+            //MergeExaplain
+            MergeExaplain.MergeE(nums);
             foreach (int item in nums)
             {
                 Console.WriteLine(item);
             }
+
         }
     }
 }
