@@ -63,7 +63,7 @@ namespace DiveIntoReflection
             driver.Driven();
             IFly fly1 = sp.GetService<IFly>();
             fly1.Eat();
-            fly1.Run();
+            //fly1.Run();
         }
          
     }
