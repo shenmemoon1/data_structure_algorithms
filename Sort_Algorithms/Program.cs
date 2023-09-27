@@ -28,11 +28,15 @@ namespace Sort_Algorithms
             //merge_.MergeSort(nums);
 
             //MergeExaplain
-            MergeExaplain.MergeE(nums);
+            //MergeExaplain.MergeE(nums);
+
+            //heap sort
+            HeapSort.HeapSor(nums);
             foreach (int item in nums)
             {
                 Console.WriteLine(item);
             }
+
 
         }
     }
