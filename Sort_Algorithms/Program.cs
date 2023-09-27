@@ -8,6 +8,7 @@ namespace Sort_Algorithms
         {
             int[] nums = { 4,7,2,5,1};
             double[] nums2 = { 0.23, 0.53, 0.33, 0.75, 0.43, 0.73 };
+            int[] nums3 = { 4, 3, 5, 6, 1, 3, 4, 5 };
             //SELECT SORT
             Selection_Sort selection_ = new();
             //selection_.selectionSort(nums);
@@ -33,13 +34,15 @@ namespace Sort_Algorithms
 
             //heap sort
             //HeapSort.HeapSor(nums);
-            BucketSort.BucketSor(nums2);
-            /*foreach (int item in nums2)
+            //BucketSort.BucketSor(nums2);
+
+
+            CountingSort.CountSort(nums3);
+
+            foreach (int item in nums3)
             {
                 Console.WriteLine(item);
-            }*/
-
-
+            }
         }
     }
 }
