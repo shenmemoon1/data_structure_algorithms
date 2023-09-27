@@ -7,6 +7,7 @@ namespace Sort_Algorithms
         static void Main(string[] args)
         {
             int[] nums = { 4,7,2,5,1};
+            double[] nums2 = { 0.23, 0.53, 0.33, 0.75, 0.43, 0.73 };
             //SELECT SORT
             Selection_Sort selection_ = new();
             //selection_.selectionSort(nums);
@@ -31,11 +32,12 @@ namespace Sort_Algorithms
             //MergeExaplain.MergeE(nums);
 
             //heap sort
-            HeapSort.HeapSor(nums);
-            foreach (int item in nums)
+            //HeapSort.HeapSor(nums);
+            BucketSort.BucketSor(nums2);
+            /*foreach (int item in nums2)
             {
                 Console.WriteLine(item);
-            }
+            }*/
 
 
         }
