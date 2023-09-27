@@ -46,12 +46,14 @@ namespace Sort_Algorithms
 
             Console.WriteLine("-----------couting sort version two---------------");
             ProductUserForCountngSort[] productUserForCountngSorts = new ProductUserForCountngSort[] {
-                    new ProductUserForCountngSort(2,"A"),
                     new ProductUserForCountngSort(3,"B"),
                     new ProductUserForCountngSort(2,"C"),
+                    new ProductUserForCountngSort(2,"A"),
                     new ProductUserForCountngSort(4,"D")};
 
-            CoutingSortVersion2.CountingSortStable(productUserForCountngSorts);
+            //CoutingSortVersion2.CountingSortStable(productUserForCountngSorts);
+            //CountingSortSolution3.CountingSortSolution(productUserForCountngSorts);
+            Test.Sort(productUserForCountngSorts);
             foreach (var item in productUserForCountngSorts)
             {
                 Console.WriteLine($"{item.Price} -- {item.Name}");
