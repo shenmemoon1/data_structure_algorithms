@@ -52,12 +52,26 @@ namespace Sort_Algorithms
                     new ProductUserForCountngSort(4,"D")};
 
             //CoutingSortVersion2.CountingSortStable(productUserForCountngSorts);
-            //CountingSortSolution3.CountingSortSolution(productUserForCountngSorts);
-            Test.Sort(productUserForCountngSorts);
+            CountingSortSolution3.CountingSortSolution(productUserForCountngSorts);
             foreach (var item in productUserForCountngSorts)
             {
                 Console.WriteLine($"{item.Price} -- {item.Name}");
             }
+            int[] nums4 = new int[]{
+                2021003,
+                2021001,
+                2021004,
+                2021002,
+                2021005
+            };
+
+            Console.WriteLine("-----------radix sort version---------------");
+            Radix.RadixSort(nums4);
+            foreach (var item in nums4)
+            {
+                Console.WriteLine(item);
+            }
+
         }
     }
 }

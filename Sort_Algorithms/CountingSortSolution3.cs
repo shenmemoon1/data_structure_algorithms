@@ -17,7 +17,7 @@ namespace Sort_Algorithms
                 max = Math.Max(item.Price, max);
             }
 
-            //count array用来保存次数
+            //count array用来保存次数66
             //它的大小是max + 1
             int[] countArray = new int[max+1];
             //进行计算次数
