@@ -66,7 +66,8 @@ namespace Sort_Algorithms
             };
 
             Console.WriteLine("-----------radix sort version---------------");
-            Radix.RadixSort(nums4);
+            //Radix.RadixSort(nums4);
+            TestingSort.Sort(nums4);
             foreach (var item in nums4)
             {
                 Console.WriteLine(item);

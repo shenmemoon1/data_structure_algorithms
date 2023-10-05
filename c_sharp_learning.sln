@@ -53,13 +53,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericDiveInto", "GenericD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateGenericAndLINQ", "DelegateGenericAndLINQ\DelegateGenericAndLINQ.csproj", "{A0D1C597-952B-4145-86DB-F9790A4D4729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency_Injection", "Dependency_Injection\Dependency_Injection.csproj", "{1543FAD8-4EF4-4496-B1FD-7A9E49160494}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dependency_Injection", "Dependency_Injection\Dependency_Injection.csproj", "{1543FAD8-4EF4-4496-B1FD-7A9E49160494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenpendencyInjection_project", "DenpendencyInjection_project\DenpendencyInjection_project.csproj", "{E40E3BBF-F8FD-4055-969E-B48544F33910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DenpendencyInjection_project", "DenpendencyInjection_project\DenpendencyInjection_project.csproj", "{E40E3BBF-F8FD-4055-969E-B48544F33910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal.lib", "Animal.lib\Animal.lib.csproj", "{CAFFCCA0-8086-45EC-9758-306079587936}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animal.lib", "Animal.lib\Animal.lib.csproj", "{CAFFCCA0-8086-45EC-9758-306079587936}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.SDK", "DI.SDK\DI.SDK.csproj", "{EA44CF9B-9E63-4403-8F08-10C05FFA3199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DI.SDK", "DI.SDK\DI.SDK.csproj", "{EA44CF9B-9E63-4403-8F08-10C05FFA3199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivideAndConquer", "DivideAndConquer\DivideAndConquer.csproj", "{1F9A6F12-F38D-47E3-9F46-A268A9954505}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{EA44CF9B-9E63-4403-8F08-10C05FFA3199}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA44CF9B-9E63-4403-8F08-10C05FFA3199}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA44CF9B-9E63-4403-8F08-10C05FFA3199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9A6F12-F38D-47E3-9F46-A268A9954505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9A6F12-F38D-47E3-9F46-A268A9954505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9A6F12-F38D-47E3-9F46-A268A9954505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9A6F12-F38D-47E3-9F46-A268A9954505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
