@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DivideAndConquer
 { 
@@ -15,6 +16,17 @@ namespace DivideAndConquer
             int[] preOrder = { 3, 9, 2, 1, 7 };
             int[] inOrder = { 9, 3, 1, 2, 7 };
             BinarySearchTreeQA.BuildTree(preOrder, inOrder);
+
+            Console.WriteLine("------------------------------------------");
+            List<int> A = new List<int> { 1, 2, 3, 4, 5 };
+            List<int> B = new List<int>();
+            List<int> C = new List<int>();
+            DCHanoiTower.solveHanota(A, B, C);
+            foreach (int value in C)
+            {
+                Console.WriteLine(value);
+            }
+
         }
     }
 }

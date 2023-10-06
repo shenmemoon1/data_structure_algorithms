@@ -19,7 +19,28 @@ namespace DivideAndConquer
         public static void solveHanota(List<int> A, List<int> B, List<int> C)
         {
             int n = A.Count;
-            dfs()
+            Dfs(n, A, B, C);
+        }
+
+        private static void Dfs(int n, List<int> src, List<int> buf, List<int> tar)
+        {
+            if (n == 1)
+            {
+                move(src, tar);
+                return;
+            }
+
+            Dfs(n - 1, src, tar, buf);
+            move(src, tar);
+            Dfs(n - 1, buf, src, tar);
+        }
+
+        private static void move(List<int> src, List<int> tar)
+        {
+            int pan = src[^1];
+            src.RemoveAt(src.Count -1);
+            tar.Add(pan);
+
         }
     }
 }
