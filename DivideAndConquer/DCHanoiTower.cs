@@ -18,29 +18,31 @@ namespace DivideAndConquer
 
         public static void solveHanota(List<int> A, List<int> B, List<int> C)
         {
-            int n = A.Count;
-            Dfs(n, A, B, C);
+            int n = A.Count; // 获取盘子数量，即列表A的元素个数
+            Dfs(n, A, B, C); // 调用递归函数Dfs，将盘子从A移动到C，借助B
         }
 
         private static void Dfs(int n, List<int> src, List<int> buff, List<int> tar)
         {
-            if(n == 1)
+            if (n == 1)
             {
-                move(src, tar);
-                return;
+                move(src, tar); // 如果只有一个盘子，直接将其从源柱(src)移动到目标柱(tar)
+                return; // 返回，结束递归
             }
 
-            Dfs(n - 1, src, tar, buff);
-            move(src, tar);
-            Dfs(n - 1, buff, src, tar);
-
+            Dfs(n - 1, src, tar, buff); // 递归调用，将n-1个盘子从源柱(src)移动到辅助柱(buff)，目标柱(tar)作为辅助
+            move(src, tar); // 将最后一个盘子从源柱(src)移动到目标柱(tar)
+            Dfs(n - 1, buff, src, tar); // 递归调用，将n-1个盘子从辅助柱(buff)移动到目标柱(tar)，源柱(src)作为辅助
         }
 
         private static void move(List<int> src, List<int> tar)
         {
-            int pan = src[^1];
-            src.RemoveAt(src.Count - 1);
-            tar.Add(pan);
+            int pan = src[^1]; // 获取源柱(src)的顶部盘子
+            src.RemoveAt(src.Count - 1); // 移除源柱(src)的顶部盘子
+            tar.Add(pan); // 将盘子放置到目标柱(tar)的顶部
         }
+
+
+        //resource:https://www.youtube.com/watch?v=YstLjLCGmgg
     }
 }
