@@ -27,6 +27,8 @@ namespace DivideAndConquer
                 Console.WriteLine(value);
             }
 
+            Console.WriteLine("---------------------------------------------") ;
+            Console.WriteLine(HanoiStepCalculate.HanoiCal(10));
         }
     }
 }

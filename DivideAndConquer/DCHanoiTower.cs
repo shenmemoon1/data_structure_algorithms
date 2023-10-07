@@ -22,25 +22,25 @@ namespace DivideAndConquer
             Dfs(n, A, B, C);
         }
 
-        private static void Dfs(int n, List<int> src, List<int> buf, List<int> tar)
+        private static void Dfs(int n, List<int> src, List<int> buff, List<int> tar)
         {
-            if (n == 1)
+            if(n == 1)
             {
                 move(src, tar);
                 return;
             }
 
-            Dfs(n - 1, src, tar, buf);
+            Dfs(n - 1, src, tar, buff);
             move(src, tar);
-            Dfs(n - 1, buf, src, tar);
+            Dfs(n - 1, buff, src, tar);
+
         }
 
         private static void move(List<int> src, List<int> tar)
         {
             int pan = src[^1];
-            src.RemoveAt(src.Count -1);
+            src.RemoveAt(src.Count - 1);
             tar.Add(pan);
-
         }
     }
 }
