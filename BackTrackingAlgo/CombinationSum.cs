@@ -39,7 +39,7 @@ namespace BackTrackingAlgo
                 {
                     curCombination.Add(candidates[i]);
                     BackTrack(remainingTarget - candidates[i], i);
-                    curCombination.RemoveAt(curCombination[^1]);
+                    curCombination.RemoveAt(curCombination.Count - 1); // 回溯，移除最后一个元素
                 }
             }
 

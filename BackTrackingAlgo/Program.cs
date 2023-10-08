@@ -81,6 +81,20 @@ namespace BackTrackingAlgo
                 Console.Write(']');
                 Console.WriteLine();
             }
+
+            Console.WriteLine("----------------------------------permutation-------------------------------------------");
+            int[] nums = new int[] { 1, 2, 3 };
+            Permutations.PermutationCollect(nums);
+            foreach (List<int> item in Permutations.PermutationCollect(nums))
+            {
+                Console.Write('[');
+                for (int i = 0; i < item.Count; i++)
+                {
+                    Console.Write(item[i]);
+                }
+                Console.Write(']');
+                Console.WriteLine();
+            }
         }
     }
 }
