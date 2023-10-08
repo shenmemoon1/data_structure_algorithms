@@ -63,7 +63,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DI.SDK", "DI.SDK\DI.SDK.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivideAndConquer", "DivideAndConquer\DivideAndConquer.csproj", "{1F9A6F12-F38D-47E3-9F46-A268A9954505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackTrackingAlgo", "BackTrackingAlgo\BackTrackingAlgo.csproj", "{BC781743-6639-40A7-8C9E-9B5A71225ADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackTrackingAlgo", "BackTrackingAlgo\BackTrackingAlgo.csproj", "{BC781743-6639-40A7-8C9E-9B5A71225ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Danamic programming", "Danamic programming\Danamic programming.csproj", "{8F791051-5019-4857-99AB-529C75DC3037}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{BC781743-6639-40A7-8C9E-9B5A71225ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC781743-6639-40A7-8C9E-9B5A71225ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC781743-6639-40A7-8C9E-9B5A71225ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F791051-5019-4857-99AB-529C75DC3037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F791051-5019-4857-99AB-529C75DC3037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F791051-5019-4857-99AB-529C75DC3037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F791051-5019-4857-99AB-529C75DC3037}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
