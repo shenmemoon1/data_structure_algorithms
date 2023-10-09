@@ -16,6 +16,8 @@ namespace Danamic_programming
             Console.WriteLine("----------------------------------------");
             int[] cost = {0,1,10,1,6,1};
             Console.WriteLine(DPClimbStair_min.MinCost_Stair(cost)) ;
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine(ConstrainDpClimb.ClimbingStairsConstraintDP(3));
         }
     }
 }
