@@ -46,5 +46,27 @@ namespace Danamic_programming
             return dp[n]; // 返回到达顶部台阶的最小代价。
 
         }
+
+        /* 理解：
+         * 问题的关键在于选择到达每个台阶的最小代价，而不是一层一层地计算。
+         * 通过状态转移方程 dp[i] = Math.Min(dp[i - 1], dp[i - 2]) + cost[i]
+        */
+
+        /* 爬楼梯最小代价：空间优化后的动态规划 */
+        int MinCostClimbingStairsDPComp(int[] cost)
+        {
+            int n = cost.Length - 1;
+            if (n == 1 || n == 2)
+                return cost[n];
+            int a = cost[1], b = cost[2];
+            for (int i = 3; i <= n; i++)
+            {
+                int tmp = b;
+                b = Math.Min(a, tmp) + cost[i];
+                a = tmp;
+            }
+            return b;
+        }
+
     }
 }
