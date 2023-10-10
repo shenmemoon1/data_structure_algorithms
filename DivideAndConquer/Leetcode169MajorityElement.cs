@@ -24,8 +24,8 @@ namespace DivideAndConquer
 
             if (majorityLeft == majorityRight) return majorityLeft;
 
-            int left_count = CountNum(majorityLeft, left, mid, nums);
-            int right_count = CountNum(majorityRight, left, mid, nums);
+            int left_count = CountNum(majorityLeft, left, right, nums);
+            int right_count = CountNum(majorityRight, left, right, nums);
 
             if (left_count > (nums.Length) / 2) return majorityLeft;
             else return majorityRight;
