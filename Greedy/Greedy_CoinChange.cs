@@ -29,7 +29,7 @@ namespace Greedy
                 amt -= coins[i];
                 count++;
             }
-
+            // 若未找到可行方案，则返回 -1
             return amt == 0? count:-1;
         }
     }

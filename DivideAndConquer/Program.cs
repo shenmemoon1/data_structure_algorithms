@@ -29,6 +29,11 @@ namespace DivideAndConquer
 
             Console.WriteLine("---------------------------------------------") ;
             Console.WriteLine(HanoiStepCalculate.HanoiCal(10));
+
+            Console.WriteLine("--------------------Leetcode 169-------------------------");
+            int[] nums2 = { 3, 2, 3 };
+            Leetcode169MajorityElement.MajorityElement(nums2);
+            Leetcode169MajorityElement.MajorityElement2(nums2);
         }
     }
 }
