@@ -34,6 +34,9 @@ namespace DivideAndConquer
             int[] nums2 = { 3, 2, 3 };
             Console.WriteLine(Leetcode169MajorityElement.MajorityElement(nums2)) ;
             Leetcode169MajorityElement.MajorityElement2(nums2);
+
+            Console.WriteLine("-------------------------Leetcode 190-------------------------------");
+            Console.WriteLine(Leetcode190ReverseBits.reverseBits(0b00000010100101000001111010011100));
         }
     }
 }

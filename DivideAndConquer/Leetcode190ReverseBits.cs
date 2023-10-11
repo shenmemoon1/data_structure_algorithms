@@ -9,12 +9,12 @@ namespace DivideAndConquer
     class Leetcode190ReverseBits
     {
         //solution one(divide and conquer)
-        public uint reverseBits(uint n)
+        public static uint reverseBits(uint n)
         {
             return (uint)ReverseBits((ulong)n, 32);
         }
 
-        private ulong ReverseBits(ulong n, int bitSize)
+        private static ulong ReverseBits(ulong n, int bitSize)
         {
             if (bitSize == 1)
             {
