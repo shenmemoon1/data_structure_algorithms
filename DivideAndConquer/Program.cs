@@ -38,8 +38,14 @@ namespace DivideAndConquer
             Console.WriteLine("-------------------------Leetcode 190-------------------------------");
             Console.WriteLine(Leetcode190ReverseBits.reverseBits(0b11111111111111111111111111111101));
             Console.WriteLine(Leetcode190ReverseBits.reverseBits3(0b11111111111111111111111111111101));
-            Console.WriteLine("-------------------------------Leetcode 191--------------------------------");
-            
+            Console.WriteLine("-------------------------------Leetcode 23--------------------------------");
+            // 创建3个已排序链表
+            ListNode list1 = new ListNode(1, new ListNode(4, new ListNode(5)));
+            ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+            ListNode list3 = new ListNode(2, new ListNode(6));
+            ListNode[] lists = new ListNode[] { list1, list2, list3 };
+            Leetcode23MergekSortedLists.MergeKLists(lists);
+
         }
     }
 }

@@ -21,12 +21,12 @@ namespace DivideAndConquer
          * 如果A节点《B节点那么 A自然再前面 B就得和A的next节点比较 
          * 不停这个过程
          */
-        public ListNode MergeKLists(ListNode[] lists)
+        public static ListNode MergeKLists(ListNode[] lists)
         {
             return MergeSp(0, lists.Length - 1, lists);
         }
 
-        private ListNode MergeSp(int left, int right, ListNode[] lists)
+        private static ListNode MergeSp(int left, int right, ListNode[] lists)
         {
             if (left == right)
             {
@@ -45,7 +45,7 @@ namespace DivideAndConquer
             return Merge(leftList, rightList);
         }
 
-        private ListNode Merge(ListNode list1, ListNode list2)
+        private static ListNode Merge(ListNode list1, ListNode list2)
         {
             if (list1 == null)
             {
