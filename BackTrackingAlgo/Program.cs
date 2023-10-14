@@ -95,6 +95,10 @@ namespace BackTrackingAlgo
                 Console.Write(']');
                 Console.WriteLine();
             }
+
+            Console.WriteLine("-----------------------------permutation 2------------------------------------------------------");
+            int[] arr = { 1, 1, 2 };
+            Leetcode47Permutate2.PermuteUnique(arr);
         }
     }
 }
