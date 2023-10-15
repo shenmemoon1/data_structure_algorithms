@@ -27,12 +27,12 @@ namespace DivideAndConquer
                 Console.WriteLine(value);
             }
 
-            Console.WriteLine("---------------------------------------------") ;
+            Console.WriteLine("---------------------------------------------");
             Console.WriteLine(HanoiStepCalculate.HanoiCal(10));
 
             Console.WriteLine("--------------------Leetcode 169-------------------------");
             int[] nums2 = { 3, 2, 3 };
-            Console.WriteLine(Leetcode169MajorityElement.MajorityElement(nums2)) ;
+            Console.WriteLine(Leetcode169MajorityElement.MajorityElement(nums2));
             Leetcode169MajorityElement.MajorityElement2(nums2);
 
             Console.WriteLine("-------------------------Leetcode 190-------------------------------");
@@ -45,6 +45,11 @@ namespace DivideAndConquer
             ListNode list3 = new ListNode(2, new ListNode(6));
             ListNode[] lists = new ListNode[] { list1, list2, list3 };
             Leetcode23MergekSortedLists.MergeKLists(lists);
+
+            Console.WriteLine("-----------------------------53-------------------------------------");
+            int[] nums3 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            Leetcode53MaxSubarray.MaxSubArray(nums3);
+            Leetcode53MaxSubarray.MaxSubArray2(nums3);
 
         }
     }
