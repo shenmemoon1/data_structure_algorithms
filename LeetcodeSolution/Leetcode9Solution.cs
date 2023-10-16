@@ -35,7 +35,7 @@ namespace LeetcodeSolution
 
 
         //solution two
-        public bool IsPalindrome(int x)
+        public bool IsPalindrome2(int x)
         {
             if (x < 0 || (x % 10 == 0 && x != 0)) return false;
 
@@ -53,5 +53,28 @@ namespace LeetcodeSolution
             return reverse == original ? true : false;
         }
 
+
+        //solution three using divide conquer
+        public bool IsPalindrome3(int x)
+        {
+            string xStr = x.ToString();
+            int left = 0;
+            int right = xStr.Length - 1;
+            return IsPalindromeHelper(left, right, xStr);
+        }
+
+        private bool IsPalindromeHelper(int left, int right, string str)
+        {
+            if (left >= right)
+            {
+                return true; // Base case: If we've checked all characters, it's a palindrome.
+            }
+            if (str[left] != str[right])
+            {
+                return false; // If characters don't match, it's not a palindrome.
+            }
+            // Recursively check the substring between left and right.
+            return IsPalindromeHelper(left + 1, right - 1, str);
+        }
     }
 }
