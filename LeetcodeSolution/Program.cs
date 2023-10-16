@@ -6,7 +6,9 @@ namespace LeetcodeSolution
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("--------------quetion 9----------------------");
+            Leetcode9Solution.IsPalindrome(121);
+            Leetcode9Solution.IsPalindrome(-121);
         }
     }
 }
