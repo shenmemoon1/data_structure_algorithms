@@ -12,6 +12,7 @@ namespace LeetcodeSolution
             Console.WriteLine(Leetcode9Solution.IsPalindrome(0));
             int[] nums = {1, 2, 3};
             Console.WriteLine(Leetcode78.Subsets(nums));
+            Console.WriteLine(Leetcode22.GenerateParenthesis(3));
         }
     }
 }
