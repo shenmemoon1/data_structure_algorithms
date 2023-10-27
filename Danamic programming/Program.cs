@@ -18,6 +18,8 @@ namespace Danamic_programming
             Console.WriteLine(DPClimbStair_min.MinCost_Stair(cost)) ;
             Console.WriteLine("------------------------------------------");
             Console.WriteLine(ConstrainDpClimb.ClimbingStairsConstraintDP(3));
+            Console.WriteLine(FibonacciNumber.FibonacciDP(9));
+            Console.WriteLine(FibonacciNumber.Fibonacci2(9));
         }
     }
 }

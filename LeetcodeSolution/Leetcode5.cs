@@ -8,5 +8,6 @@ namespace LeetcodeSolution
 {
     class Leetcode5
     {
+
     }
 }
