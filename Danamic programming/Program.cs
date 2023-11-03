@@ -19,7 +19,10 @@ namespace Danamic_programming
             Console.WriteLine("------------------------------------------");
             Console.WriteLine(ConstrainDpClimb.ClimbingStairsConstraintDP(3));
             Console.WriteLine(FibonacciNumber.FibonacciDP(9));
-            Console.WriteLine(FibonacciNumber.Fibonacci2(9));
+            Console.WriteLine(FibonacciNumber.FibonacciIterative(9));
+            Console.WriteLine(FibonacciNumber.FibonacciRecursive(9));
+
+            Console.WriteLine("------------------------------------------");
         }
     }
 }
