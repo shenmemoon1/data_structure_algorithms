@@ -10,27 +10,29 @@ namespace LeetcodeSolution
     {
         public static string LongestCommonPrefix(string[] strs)
         {
+            if (strs == null || strs.Length == 0)
+            {
+                return "";
+            }
+
             string res = "";
-            int len = strs.Length;
-            int count = 3;
+            int len = strs[0].Length;
+
+
             for (int i = 0; i < len; i++)
             {
-                //获取第一个数组元素的第一个元素
                 char findLetter = strs[0][i];
-                for (int j = 1; j < strs[0].Length j++)
+                for (int j = 1; j < strs.Length; j++)
                 {
-                    if(strs[j][i] != findLetter)
+                    if (i >= strs[j].Length || strs[j][i] != findLetter)
                     {
-                        count--;
-                        break;
+                        return res;
                     }
                 }
-                if(count == 3)
-                {
-                    res += findLetter;
-                }
+                res += findLetter;
             }
             return res;
+
 
         }
     }
