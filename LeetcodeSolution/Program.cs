@@ -19,6 +19,9 @@ namespace LeetcodeSolution
             Console.WriteLine("-----------------quetion14-----------------------");
             string[] strs = { "flower", "flow", "flight" };
             Console.WriteLine(Leetcode14LongestPrefix.LongestCommonPrefix(strs)); ;
+            Console.WriteLine("-----------------question 27----------------------");
+            int[] numbers = { 3, 2, 2, 3 };
+            Console.WriteLine(Leetcode27RemoveElement.RemoveElement(numbers,3));
         }
     }
 }
