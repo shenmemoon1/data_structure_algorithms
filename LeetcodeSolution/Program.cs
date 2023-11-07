@@ -22,6 +22,8 @@ namespace LeetcodeSolution
             Console.WriteLine("-----------------question 27----------------------");
             int[] numbers = { 3, 2, 2, 3 };
             Console.WriteLine(Leetcode27RemoveElement.RemoveElement(numbers,3));
+            string haystack = "hello", needle = "ll";
+            Console.WriteLine(Leetcode28FindIndexOfFirstOccurrence.StrStr(haystack,needle));
         }
     }
 }
