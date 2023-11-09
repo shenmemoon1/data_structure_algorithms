@@ -23,6 +23,8 @@ namespace Danamic_programming
             Console.WriteLine(FibonacciNumber.FibonacciRecursive(9));
 
             Console.WriteLine("------------------------------------------");
+            int[] coins = { 1, 2, 5 };
+            CoinChange.LeastCoinChange(coins, 11);
         }
     }
 }
