@@ -24,6 +24,9 @@ namespace LeetcodeSolution
             Console.WriteLine(Leetcode27RemoveElement.RemoveElement(numbers,3));
             string haystack = "abc", needle = "c";
             Console.WriteLine(Leetcode28FindIndexOfFirstOccurrence.StrStr(haystack,needle));
+            Console.WriteLine("--------------------58 question-------------------");
+            string s1 = "Today is a nice day";
+            Leetcode58LenofLastword.LengthOfLastWord(s1);
         }
     }
 }
