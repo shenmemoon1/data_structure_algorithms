@@ -27,6 +27,11 @@ namespace LeetcodeSolution
             Console.WriteLine("--------------------58 question-------------------");
             string s1 = "Today is a nice day";
             Leetcode58LenofLastword.LengthOfLastWord(s1);
+            Console.WriteLine("------------------66 question--------------------");
+            int[] digits = { 1, 2, 4 };
+            int[] digits2 = {1, 8,9 };
+
+            Leecode66PlusOne.PlusOne(digits2);
         }
     }
 }
