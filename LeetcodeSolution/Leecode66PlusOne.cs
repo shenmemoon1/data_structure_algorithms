@@ -9,7 +9,7 @@ namespace LeetcodeSolution
     class Leecode66PlusOne
     {
         public static int[] PlusOne(int[] digits)
-        {
+        { 
             int n = digits.Length;
 
             for (int i = n - 1; i >= 0; i--)

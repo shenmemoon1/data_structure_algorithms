@@ -32,6 +32,10 @@ namespace LeetcodeSolution
             int[] digits2 = {1, 8,9 };
 
             Leecode66PlusOne.PlusOne(digits2);
+
+            Console.WriteLine("------------------67 quetion----------------------");
+            string a = "11", b = "1";
+            Leetcode67AddBinary.AddBinary(a, b);
         }
     }
 }
