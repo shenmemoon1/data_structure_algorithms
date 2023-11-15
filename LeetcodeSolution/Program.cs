@@ -35,7 +35,7 @@ namespace LeetcodeSolution
 
             Console.WriteLine("------------------67 quetion----------------------");
             string a = "11", b = "1";
-            Leetcode67AddBinary.AddBinary(a, b);
+            Leetcode67AddBinary.AddBinary2(a, b);
         }
     }
 }
