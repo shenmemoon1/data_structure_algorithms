@@ -36,6 +36,8 @@ namespace LeetcodeSolution
             Console.WriteLine("------------------67 quetion----------------------");
             string a = "11", b = "1";
             Leetcode67AddBinary.AddBinary2(a, b);
+            Console.WriteLine("----------------70 --------------------------------");
+            Leetcode70ClimbingStair.ClimbStairs(5);
         }
     }
 }

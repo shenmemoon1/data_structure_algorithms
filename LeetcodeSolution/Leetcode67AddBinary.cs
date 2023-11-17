@@ -33,7 +33,7 @@ namespace LeetcodeSolution
         }
 
 
-        public string AddBinary2(string a, string b)
+        public static string AddBinary2(string a, string b)
         {
             int carry = 0;
             int i = a.Length - 1;
