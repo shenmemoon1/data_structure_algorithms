@@ -21,15 +21,15 @@ namespace LeetcodeSolution
             Console.WriteLine(Leetcode14LongestPrefix.LongestCommonPrefix(strs)); ;
             Console.WriteLine("-----------------question 27----------------------");
             int[] numbers = { 3, 2, 2, 3 };
-            Console.WriteLine(Leetcode27RemoveElement.RemoveElement(numbers,3));
+            Console.WriteLine(Leetcode27RemoveElement.RemoveElement(numbers, 3));
             string haystack = "abc", needle = "c";
-            Console.WriteLine(Leetcode28FindIndexOfFirstOccurrence.StrStr(haystack,needle));
+            Console.WriteLine(Leetcode28FindIndexOfFirstOccurrence.StrStr(haystack, needle));
             Console.WriteLine("--------------------58 question-------------------");
             string s1 = "Today is a nice day";
             Leetcode58LenofLastword.LengthOfLastWord(s1);
             Console.WriteLine("------------------66 question--------------------");
             int[] digits = { 1, 2, 4 };
-            int[] digits2 = {1, 8,9 };
+            int[] digits2 = { 1, 8, 9 };
 
             Leecode66PlusOne.PlusOne(digits2);
 
@@ -38,6 +38,10 @@ namespace LeetcodeSolution
             Leetcode67AddBinary.AddBinary2(a, b);
             Console.WriteLine("----------------70 --------------------------------");
             Leetcode70ClimbingStair.ClimbStairs(5);
+            Console.WriteLine("------------------88 question----------------------");
+            int[] nums1 = { 1, 2, 3, 0, 0, 0 }, nums2 = { 2, 5, 6 };
+            int m = 3, n = 3;
+            Leetcode88MergeArray.Merge(nums1, m, nums2, n);
         }
     }
 }
