@@ -22,7 +22,7 @@ namespace LeetcodeSolution
             // 回调函数，用于遍历树并记录深度
             public void Callback(TreeNode node, int depth, List<int> depths)
             {
-                if (node == null) return; // 如果节点为空，结束当前遍历
+                if (node == null) return; // 如果节点为空，结束当前遍历 
 
                 if (node.left == null && node.right == null)
                 {
