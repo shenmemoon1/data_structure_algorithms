@@ -42,6 +42,8 @@ namespace LeetcodeSolution
             int[] nums1 = { 1, 2, 3, 0, 0, 0 }, nums2 = { 2, 5, 6 };
             int m = 3, n = 3;
             Leetcode88MergeArray.Merge(nums1, m, nums2, n);
+            Console.WriteLine("-----------------leetcode 119--------------------");
+            Leetcode119Pascalll.GetRow(3);
         }
     }
 }
