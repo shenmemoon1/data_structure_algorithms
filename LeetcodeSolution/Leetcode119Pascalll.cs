@@ -8,5 +8,6 @@ namespace LeetcodeSolution
 {
     class Leetcode119Pascalll
     {
+        //给出一个rowindex 返回rowindex那一行的值
     }
 }
