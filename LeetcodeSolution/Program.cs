@@ -44,6 +44,8 @@ namespace LeetcodeSolution
             Leetcode88MergeArray.Merge(nums1, m, nums2, n);
             Console.WriteLine("-----------------leetcode 119--------------------");
             Leetcode119Pascalll.GetRow(3);
+            Console.WriteLine("-------------leetcode 121----------------------");
+            Leetcode121.MaxProfit(new int[]{ 7,1,5,3,6,4});
         }
     }
 }
