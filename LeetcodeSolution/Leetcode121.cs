@@ -8,6 +8,7 @@ namespace LeetcodeSolution
 {
     class Leetcode121
     {
+        //max profit
         public static int MaxProfit(int[] prices)
         {
             if (prices == null || prices.Length < 2)
