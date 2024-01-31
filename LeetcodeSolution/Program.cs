@@ -45,7 +45,20 @@ namespace LeetcodeSolution
             Console.WriteLine("-----------------leetcode 119--------------------");
             Leetcode119Pascalll.GetRow(3);
             Console.WriteLine("-------------leetcode 121----------------------");
-            Leetcode121.MaxProfit(new int[]{ 7,1,5,3,6,4});
+            Leetcode121.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
+            Console.WriteLine("------------------leetcode206------------------");
+            //create node
+            ListNode node1 = new(1);
+            ListNode node2 = new(2);
+            ListNode node3 = new(3);
+            ListNode node4 = new(4);
+
+            node1.next = node2;
+            node2.next = node3;
+            node3.next = node4;
+
+            Leetcode206.ReverseList(node1);
+
         }
     }
 }
