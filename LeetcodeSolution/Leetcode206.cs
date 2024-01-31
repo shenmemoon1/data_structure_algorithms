@@ -30,5 +30,21 @@ namespace LeetcodeSolution
 
             return fake.next;
         }
+
+        //using recursion
+        public ListNode ReverseList2(ListNode head)
+        {
+            if (head == null || head.next == null)
+            {
+                return head;
+            }
+
+            ListNode reversedList = ReverseList2(head.next);
+            head.next.next = head;
+            head.next = null;
+
+            return reversedList;
+        }
+
     }
 }
