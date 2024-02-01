@@ -58,6 +58,7 @@ namespace LeetcodeSolution
             node3.next = node4;
 
             Leetcode206.ReverseList(node1);
+            Leetcode206.ReverseList2(node1);
 
         }
     }

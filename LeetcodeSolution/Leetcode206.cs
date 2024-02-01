@@ -32,7 +32,7 @@ namespace LeetcodeSolution
         }
 
         //using recursion
-        public ListNode ReverseList2(ListNode head)
+        public static ListNode ReverseList2(ListNode head)
         {
             if (head == null || head.next == null)
             {
