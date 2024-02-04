@@ -59,6 +59,20 @@ namespace LeetcodeSolution
 
             Leetcode206.ReverseList(node1);
             Leetcode206.ReverseList2(node1);
+            // Console.WriteLine("------------------leetcode234------------------");
+            //create node
+            ListNode n1 = new(1);
+            ListNode n2 = new(2);
+            ListNode n3 = new(2);
+            ListNode n4 = new(1);
+
+            n1.next = n2;
+            n2.next = n3;
+            n3.next = n4;
+
+            Leetcode234.IsPalindrome(n1);
+
+
 
         }
     }
