@@ -11,7 +11,7 @@ namespace LeetcodeSolution
         public void MoveZeroes(int[] nums)
         {
             if (nums.Length == 0) return;
-            List<int> list = [];
+            List<int> list = new List<int>();
 
             for (int i = 0; i < nums.Length; i++)
             {

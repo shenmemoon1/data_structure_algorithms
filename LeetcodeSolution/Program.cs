@@ -73,7 +73,7 @@ namespace LeetcodeSolution
             Leetcode234.IsPalindrome(n1);
 
 
-
+            Console.WriteLine("--------------------------leetcode543------------------");
         }
     }
 }
