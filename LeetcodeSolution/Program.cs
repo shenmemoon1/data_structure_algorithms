@@ -1,4 +1,5 @@
 ﻿using System;
+using BinaryTree;
 
 namespace LeetcodeSolution
 {
@@ -74,6 +75,18 @@ namespace LeetcodeSolution
 
 
             Console.WriteLine("--------------------------leetcode543------------------");
+            BinaryTree.TreeNode one = new(1);
+            BinaryTree.TreeNode two = new(2);
+            BinaryTree.TreeNode three = new(3);
+            BinaryTree.TreeNode four = new(4);
+            BinaryTree.TreeNode five = new(5);
+
+            one.left = two;
+            one.right = three;
+            two.left = four;
+            two.right = five;
+
+            Leetcode543.DiameterOfBinaryTree(one);
         }
     }
 }

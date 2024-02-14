@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BinaryTree;
 
 namespace LeetcodeSolution
 {
     class Leetcode543
     {
-        public int DiameterOfBinaryTree(TreeNode root)
+        public static int DiameterOfBinaryTree(BinaryTree.TreeNode root)
         {
             if (root == null) return 0;
 
@@ -19,7 +20,7 @@ namespace LeetcodeSolution
             return maxLength;
         }
 
-        private int CalculatePathLength(TreeNode node, ref int maxLength)
+        private static int CalculatePathLength(BinaryTree.TreeNode node, ref int maxLength)
         {
             if (node == null) return 0;
 
