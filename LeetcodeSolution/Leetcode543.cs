@@ -8,38 +8,29 @@ namespace LeetcodeSolution
 {
     class Leetcode543
     {
-        public static int DiameterOfBinaryTree(TreeNode root)
+        public int DiameterOfBinaryTree(TreeNode root)
         {
             if (root == null) return 0;
-            List<List<int>> list = new List<List<int>>();
-            List<int> selected = new List<int>();
-
-            FindLen(root, list, selected);
 
             int maxLength = 0;
 
-            foreach (List<int> innerList in list)
-            {
-                if (innerList.Count > maxLength)
-                {
-                    maxLength = innerList.Count;
-                }
-            }
+            CalculatePathLength(root, ref maxLength);
 
             return maxLength;
         }
 
-        public static void FindLen(TreeNode root, List<List<int>> res, List<int> select)
+        private int CalculatePathLength(TreeNode node, ref int maxLength)
         {
-            if (root.left == null && root.right == null)
-            {
-                res.Add(new List<int>(select));
-                return;
-            }
+            if (node == null) return 0;
 
-            select.Add(root.val);
-            FindLen(root.left, res, select);
-            FindLen(root.right, res, select);
+            int leftPathLength = CalculatePathLength(node.left, ref maxLength);
+            int rightPathLength = CalculatePathLength(node.right, ref maxLength);
+
+            // 更新最大长度
+            maxLength = Math.Max(maxLength, leftPathLength + rightPathLength);
+
+            // 返回以当前节点为根的子树的最大深度
+            return 1 + Math.Max(leftPathLength, rightPathLength);
         }
     }
 }
