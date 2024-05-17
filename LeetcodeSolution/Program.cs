@@ -87,6 +87,15 @@ namespace LeetcodeSolution
             two.right = five;
 
             Leetcode543.DiameterOfBinaryTree(one);
+
+            //Leetcode 5
+            Console.WriteLine("-------------------------------------leetcode 5-----------------------------------------");
+
+            string text = "cbb";
+
+            Leetcode5.LongestPalindrome(text);
+            int[] height = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+            Leetcode11.MaxArea(height);
         }
     }
 }
